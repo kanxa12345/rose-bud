@@ -23,9 +23,6 @@ const Banner = () => {
         spaceBetween={10}
         slidesPerView={1}
         loop={true}
-        navigation={{
-          clickable: true,
-        }}
         style={{
           "--swiper-pagination-bullet-size": "8px",
           "--swiper-pagination-bullet-inactive-color": "#fff",
@@ -57,7 +54,7 @@ const Banner = () => {
               />
               <div className="absolute w-full h-full inset-0 bg-gradient-to-t from-black to-gray-400 opacity-50"></div>
             </div>
-            <div className="container h-full w-full absolute flex items-center inset-0">
+            <div className="container h-full w-full absolute flex items-center inset-0 pt-[78px]">
               <div className="w-1/2">
                 <h1 className="text-5xl font-semibold">
                     <span className="mr-1 text-brand1">{item.slogan.split(" ")[0]}</span>

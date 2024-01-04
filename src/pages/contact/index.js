@@ -30,8 +30,12 @@ const Index = () => {
       <section className="h-[200px] bg-gray-900 text-white">
         <div className="container flex justify-center items-center h-full pt-[78px]">
           <ul className="flex items-center gap-1">
-            <li><Link href="/" className="text-brand1">Home</Link></li>/
-            <li>Contact</li>
+            <li>
+              <Link href="/" className="text-brand1">
+                Home
+              </Link>
+            </li>
+            /<li>Contact</li>
           </ul>
         </div>
       </section>
