@@ -21,12 +21,8 @@ module.exports = {
     },
     extend: {
       colors: {
-        brandColor: '#0001FB',
-        secondColor: '#0F2167',
-        thirdColor: '#3558E0',
-        // color2: '#EA1B8F',
-        // color3: '#F2F02D',
-        // color4: 'rgb(81, 203, 255)',
+        brand1: '#DE2A35',
+        brand2: '#064DA4',
       },
       // fontFamily: {
       //   custom: ['Times New Roman', 'sans'],

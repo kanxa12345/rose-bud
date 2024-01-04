@@ -52,15 +52,15 @@ const Banner = () => {
                 priority={true}
                 height={6000}
                 width={6000}
-                className="w-full lg:h-[700px] md:h-[400px] sm:h-[300px] h-[200px] object-cover"
+                className="w-full lg:h-[750px] md:h-[400px] sm:h-[300px] h-[200px] object-cover"
                 alt="banner-image"
               />
-              <div className="absolute w-full h-full inset-0 bg-black opacity-50"></div>
+              <div className="absolute w-full h-full inset-0 bg-gradient-to-t from-black to-gray-400 opacity-50"></div>
             </div>
             <div className="container h-full w-full absolute flex items-center inset-0">
               <div className="w-1/2">
                 <h1 className="text-5xl font-semibold">
-                    <span className="mr-1 text-red-600">{item.slogan.split(" ")[0]}</span>
+                    <span className="mr-1 text-brand1">{item.slogan.split(" ")[0]}</span>
                     {item.slogan.split(" ").slice(1).join(" ")}
                     </h1>
               </div>
