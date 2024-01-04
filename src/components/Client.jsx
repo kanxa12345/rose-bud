@@ -31,11 +31,11 @@ const Client = () => {
             slidesPerView={3}
             pagination={{ clickable: true }}
             style={{
-              "--swiper-pagination-bullet-size": "8px",
+              "--swiper-pagination-bullet-size": "7px",
               "--swiper-pagination-bullet-inactive-color": "#fff",
               "--swiper-theme-color": "red",
               "--swiper-pagination-bullet-inactive-opacity": "0.7",
-                "--swiper-pagination-bottom": "-4px"
+                "--swiper-pagination-bottom": "-5px"
             }}
             breakpoints={{
               768: {
@@ -64,7 +64,7 @@ const Client = () => {
                 />
               </SwiperSlide>
             ))}
-            <div className="w-full h-5"></div>
+            <div className="w-full h-4"></div>
           </Swiper>
         </div>
       </div>

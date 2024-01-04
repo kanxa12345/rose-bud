@@ -37,14 +37,14 @@ const Testimonial = () => {
           >
             {TestimonialData.map((item, index) => (
               <SwiperSlide key={index}>
-                <div class="w-3/4 mx-auto text-center flex flex-col items-center">
+                <div className="w-3/4 mx-auto text-center flex flex-col items-center">
                     <Image src={item.imageUrl} priority={true} width={2000} height={2000} alt={item.name} className="w-24 h-24 object-cover rounded-full"/>
-                  <p class="leading-relaxed mt-4">{item.review}</p>
-                  <span class="inline-block h-1 w-10 rounded bg-brand2 my-4"></span>
-                  <h3 class="text-gray-900 font-medium title-font tracking-wider text-sm">
+                  <p className="leading-relaxed mt-4">{item.review}</p>
+                  <span className="inline-block h-1 w-10 rounded bg-brand2 my-4"></span>
+                  <h3 className="text-gray-900 font-medium title-font tracking-wider text-sm">
                     {item.name}
                   </h3>
-                  <p class="text-gray-500">{item.profession}</p>
+                  <p className="text-gray-500">{item.profession}</p>
                 </div>
               </SwiperSlide>
             ))}
