@@ -4,6 +4,7 @@ import React, { useEffect, useState } from "react";
 
 const Header = () => {
   const [scrolled, setScrolled] = useState(false);
+  const [aboutMenu, setAboutMenu] = useState(false);
   const [galleryMenu, setGalleryMenu] = useState(false);
 
   const handleScroll = () => {
@@ -40,8 +41,23 @@ const Header = () => {
             <li>
               <Link href="/">Home</Link>
             </li>
-            <li>
-              <a href="#">About</a>
+            <li
+              onMouseLeave={() => setAboutMenu(false)}
+              className={`relative py-8 ${
+                aboutMenu ? "overflow-visible" : "overflow-hidden"
+              } `}
+            >
+              <button onMouseEnter={() => setAboutMenu(true)}>About</button>
+              <div
+                className={`flex flex-col gap-2 absolute w-52 left-0 bg-white text-black p-2 border transition-all duration-100 ease-linear ${
+                  aboutMenu ? "top-[88px] opacity-100" : "top-28 opacity-0"
+                }`}
+              >
+                <Link href="/about/aboutUs">About Us</Link>
+                <Link href="/about/chairmanMessage">Message From Chairman</Link>
+                <Link href="/about/ourTeam">Our Team</Link>
+                <Link href="/about/aboutNepal">About Nepal</Link>
+              </div>
             </li>
             <li>
               <a href="#">Services</a>
@@ -52,9 +68,7 @@ const Header = () => {
                 galleryMenu ? "overflow-visible" : "overflow-hidden"
               } `}
             >
-              <button onMouseEnter={() => setGalleryMenu(true)}>
-                Gallery
-              </button>
+              <button onMouseEnter={() => setGalleryMenu(true)}>Gallery</button>
               <div
                 className={`flex flex-col gap-2 absolute w-36 left-0 bg-white text-black p-2 border transition-all duration-100 ease-linear ${
                   galleryMenu ? "top-[88px] opacity-100" : "top-28 opacity-0"
