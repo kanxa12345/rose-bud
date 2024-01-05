@@ -60,8 +60,8 @@ const Header = () => {
                   galleryMenu ? "top-[88px] opacity-100" : "top-28 opacity-0"
                 }`}
               >
-                <a href="/gallery/imageGallery">Image Gallery</a>
-                <a href="/gallery/videoGallery">Video Gallery</a>
+                <Link href="/gallery/imageGallery">Image Gallery</Link>
+                <Link href="/gallery/videoGallery">Video Gallery</Link>
               </div>
             </li>
             <li>
