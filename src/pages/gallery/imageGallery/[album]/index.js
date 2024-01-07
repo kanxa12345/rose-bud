@@ -7,7 +7,7 @@ import GalleryData from "@/data/GalleryData";
 const Album = () => {
   const router = useRouter();
   const { album } = router.query;
-  const data = GalleryData.filter((item) => (item.album === album));
+  const data = GalleryData.filter((item) => item.album === album);
 
   return (
     <>
@@ -31,7 +31,10 @@ const Album = () => {
       </section>
       <section className="py-20">
         <div className="container flex flex-col items-center gap-6">
-          <h2 className="text-2xl font-medium">{album}</h2>
+          <h2 className="text-2xl font-medium">
+            <span className="text-brand1">{album.split(" ")[0]}</span>{" "}
+            {album.split(" ").slice(1).join("")}
+          </h2>
           <div className="grid xl:grid-cols-5 md:grid-cols-3 sm:grid-cols-2 gap-5 w-full">
             {data.map((dataItem, index) => (
               <ImageModal

@@ -35,7 +35,7 @@ const Index = () => {
       </section>
       <section className="py-20">
         <div className="container flex flex-col items-center gap-6">
-          <h2 className="text-2xl font-medium">Image Gallery</h2>
+          <h2 className="text-2xl font-medium"><span className="text-brand1">Image</span> Gallery</h2>
           <div className="w-full grid grid-cols-5 gap-6">
             {groupedArray.map((dataItem, index) => (
               <div

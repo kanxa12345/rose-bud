@@ -26,7 +26,7 @@ const index = () => {
       </section>
       <section className="py-20">
         <div className="container flex flex-col items-center gap-6">
-          <h2 className="text-2xl font-medium">Video Gallery</h2>
+          <h2 className="text-2xl font-medium"><span className="text-brand1">Video</span> Gallery</h2>
           <div className="w-full grid grid-cols-4 gap-6">
             {VideoData.map((videoItem, id) => (
               <div key={id} className="w-full">

@@ -37,7 +37,7 @@ const Header = () => {
           />
         </Link>
         <nav>
-          <ul className="flex items-center gap-5 font-medium">
+          <ul className="flex items-center gap-6 font-medium">
             <li>
               <Link href="/">Home</Link>
             </li>

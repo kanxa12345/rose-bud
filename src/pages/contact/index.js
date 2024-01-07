@@ -41,7 +41,7 @@ const Index = () => {
       </section>
       <section className="py-20 bg-gray-100">
         <div className="container flex flex-col items-center gap-6">
-          <h2 className="text-2xl font-medium">Contact us</h2>
+          <h2 className="text-2xl font-medium"><span className="text-brand1">Contact</span> us</h2>
           <div className="w-1/2 flex flex-col gap-12">
             <div className="grid grid-cols-3 w-full gap-6">
               <div className="flex items-center gap-2">

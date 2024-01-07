@@ -42,7 +42,7 @@ const index = () => {
       </section>
       <section className="py-20">
         <div className="container flex flex-col items-center gap-5">
-          <h2 className="text-2xl font-medium">Our Team</h2>
+          <h2 className="text-2xl font-medium"><span className="text-brand1">Our</span> Team</h2>
           <div className="w-2/3 flex flex-col items-center gap-6 bg-gray-100 p-2 rounded">
             <div className="mx-auto">
               <ShowTeam data={TeamData[0]} />
