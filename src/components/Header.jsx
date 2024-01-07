@@ -56,6 +56,7 @@ const Header = () => {
                 <Link href="/about/aboutUs">About Us</Link>
                 <Link href="/about/chairmanMessage">Message From Chairman</Link>
                 <Link href="/about/ourTeam">Our Team</Link>
+                <Link href="/about/legalDocument">Legal Documents</Link>
                 <Link href="/about/aboutNepal">About Nepal</Link>
               </div>
             </li>
