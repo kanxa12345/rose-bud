@@ -34,24 +34,24 @@ const Header = () => {
             width={2000}
             height={2000}
             alt="logo"
-            className="w-[70px]"
+            className="w-[60px]"
           />
         </Link>
         <nav>
-          <ul className="flex items-center gap-6 font-medium">
+          <ul className="flex items-center gap-8 font-medium">
             <li>
               <Link href="/">Home</Link>
             </li>
             <li
               onMouseLeave={() => setAboutMenu(false)}
-              className={`relative py-8 ${
+              className={`relative py-6 ${
                 aboutMenu ? "overflow-visible" : "overflow-hidden"
               } `}
             >
               <button onMouseEnter={() => setAboutMenu(true)}>About</button>
               <div
                 className={`flex flex-col gap-2 absolute w-60 left-0 bg-brand2 bg-opacity-90 text-white p-3 transition-all duration-100 ease-linear ${
-                  aboutMenu ? "top-[88px] opacity-100" : "top-28 opacity-0"
+                  aboutMenu ? "top-[72px] opacity-100" : "top-24 opacity-0"
                 }`}
               >
                 <Link href="/about/aboutUs">About Us</Link>
@@ -63,7 +63,7 @@ const Header = () => {
             </li>
             <li
               onMouseLeave={() => setServiceMenu(false)}
-              className={`relative py-8 ${
+              className={`relative py-6 ${
                 serviceMenu ? "overflow-visible" : "overflow-hidden"
               } `}
             >
@@ -72,7 +72,7 @@ const Header = () => {
               </button>
               <div
                 className={`flex flex-col gap-2 absolute w-60 left-0 bg-brand2 bg-opacity-90 text-white p-3 transition-all duration-100 ease-linear ${
-                  serviceMenu ? "top-[88px] opacity-100" : "top-28 opacity-0"
+                  serviceMenu ? "top-[72px] opacity-100" : "top-24 opacity-0"
                 }`}
               >
                 <Link href="/service/requiredDocument">Required Documents</Link>
@@ -81,16 +81,19 @@ const Header = () => {
                 </Link>
               </div>
             </li>
+            <li>
+              <Link href="/jobSector">Job Sectors</Link>
+            </li>
             <li
               onMouseLeave={() => setGalleryMenu(false)}
-              className={`relative py-8 ${
+              className={`relative py-6 ${
                 galleryMenu ? "overflow-visible" : "overflow-hidden"
               } `}
             >
               <button onMouseEnter={() => setGalleryMenu(true)}>Gallery</button>
               <div
                 className={`flex flex-col gap-2 absolute w-40 left-0 bg-brand2 bg-opacity-90 text-white p-3 transition-all duration-100 ease-linear ${
-                  galleryMenu ? "top-[88px] opacity-100" : "top-28 opacity-0"
+                  galleryMenu ? "top-[72px] opacity-100" : "top-24 opacity-0"
                 }`}
               >
                 <Link href="/gallery/imageGallery">Image Gallery</Link>

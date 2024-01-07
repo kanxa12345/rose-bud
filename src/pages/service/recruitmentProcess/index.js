@@ -18,7 +18,7 @@ const Index = () => {
         </div>
       </section> 
       <section className='py-20 bg-gray-100'>
-        <div className="container flex flex-col items-center gap-16">
+        <div className="container flex flex-col items-center gap-10">
             <h2 className='text-2xl font-medium'><span className='text-brand1'>Recruitment</span> Process</h2>
             <div className='w-full'>
                 <Image src="/images/recruitment-process.webp" priority={true} width={2000} height={2000} alt='recruitment process' className='w-full h-full object-contain'/>
