@@ -76,10 +76,9 @@ const Header = () => {
                 }`}
               >
                 <Link href="/service/requiredDocument">Required Documents</Link>
-                <Link href="/about/chairmanMessage">Recruitment Process</Link>
-                {/* <Link href="/about/ourTeam">Our Team</Link>
-                <Link href="/about/legalDocument">Legal Documents</Link>
-                <Link href="/about/aboutNepal">About Nepal</Link> */}
+                <Link href="/service/recruitmentProcess">
+                  Recruitment Process
+                </Link>
               </div>
             </li>
             <li

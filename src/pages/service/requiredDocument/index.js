@@ -2,7 +2,7 @@ import Link from "next/link";
 import React from "react";
 import { FaArrowRightLong } from "react-icons/fa6";
 
-const index = () => {
+const Index = () => {
   return (
     <>
       <section className="h-[200px] bg-gray-900 text-white">
@@ -186,4 +186,4 @@ const index = () => {
   );
 };
 
-export default index;
+export default Index;
