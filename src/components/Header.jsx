@@ -5,6 +5,7 @@ import React, { useEffect, useState } from "react";
 const Header = () => {
   const [scrolled, setScrolled] = useState(false);
   const [aboutMenu, setAboutMenu] = useState(false);
+  const [serviceMenu, setServiceMenu] = useState(false);
   const [galleryMenu, setGalleryMenu] = useState(false);
 
   const handleScroll = () => {
@@ -49,7 +50,7 @@ const Header = () => {
             >
               <button onMouseEnter={() => setAboutMenu(true)}>About</button>
               <div
-                className={`flex flex-col gap-2 absolute w-52 left-0 bg-white text-black p-2 border transition-all duration-100 ease-linear ${
+                className={`flex flex-col gap-2 absolute w-60 left-0 bg-brand2 bg-opacity-90 text-white p-3 transition-all duration-100 ease-linear ${
                   aboutMenu ? "top-[88px] opacity-100" : "top-28 opacity-0"
                 }`}
               >
@@ -60,8 +61,26 @@ const Header = () => {
                 <Link href="/about/aboutNepal">About Nepal</Link>
               </div>
             </li>
-            <li>
-              <a href="#">Services</a>
+            <li
+              onMouseLeave={() => setServiceMenu(false)}
+              className={`relative py-8 ${
+                serviceMenu ? "overflow-visible" : "overflow-hidden"
+              } `}
+            >
+              <button onMouseEnter={() => setServiceMenu(true)}>
+                Services
+              </button>
+              <div
+                className={`flex flex-col gap-2 absolute w-60 left-0 bg-brand2 bg-opacity-90 text-white p-3 transition-all duration-100 ease-linear ${
+                  serviceMenu ? "top-[88px] opacity-100" : "top-28 opacity-0"
+                }`}
+              >
+                <Link href="/service/requiredDocument">Required Documents</Link>
+                <Link href="/about/chairmanMessage">Recruitment Process</Link>
+                {/* <Link href="/about/ourTeam">Our Team</Link>
+                <Link href="/about/legalDocument">Legal Documents</Link>
+                <Link href="/about/aboutNepal">About Nepal</Link> */}
+              </div>
             </li>
             <li
               onMouseLeave={() => setGalleryMenu(false)}
@@ -71,7 +90,7 @@ const Header = () => {
             >
               <button onMouseEnter={() => setGalleryMenu(true)}>Gallery</button>
               <div
-                className={`flex flex-col gap-2 absolute w-36 left-0 bg-white text-black p-2 border transition-all duration-100 ease-linear ${
+                className={`flex flex-col gap-2 absolute w-40 left-0 bg-brand2 bg-opacity-90 text-white p-3 transition-all duration-100 ease-linear ${
                   galleryMenu ? "top-[88px] opacity-100" : "top-28 opacity-0"
                 }`}
               >
