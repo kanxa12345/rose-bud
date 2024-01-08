@@ -10,14 +10,18 @@ import Modal from "react-modal";
 Modal.setAppElement("#__next");
 
 const Index = () => {
+  const [modalCountry, setModalCountry] = useState("");
+  const [modalJobType, setModalJobType] = useState("");
   const [modalIsOpen, setModalIsOpen] = useState(false);
   const router = useRouter();
   const { jobTitle } = router.query;
   const data = JobData.filter((item) => item.jobTitle === jobTitle);
 
-  const openModal = () => {
+  const openModal = (country, jobType) => {
     setModalIsOpen(true);
     document.body.classList.add("overflow-hidden");
+    setModalCountry(country);
+    setModalJobType(jobType);
   };
 
   const closeModal = () => {
@@ -31,13 +35,13 @@ const Index = () => {
         <div className="container flex justify-center items-center h-full pt-[78px]">
           <ul className="flex items-center gap-1">
             <li>
-              <Link href="/" className="text-brand1">
+              <Link href="/" className="text-brand1 ms-[2px]">
                 Home
               </Link>
             </li>
             /
             <li>
-              <Link href="/jobSector" className="text-brand1">
+              <Link href="/jobSector" className="text-brand1 ms-[2px]">
                 Job Sector
               </Link>
             </li>
@@ -73,26 +77,40 @@ const Index = () => {
                       <div className="font-medium sm:text-base text-sm">
                         <p>
                           Company Name:
-                          <b className=" text-brand1">{jobItem.companyName}</b>
+                          <b className=" text-brand1 ms-[2px]">
+                            {jobItem.companyName}
+                          </b>
+                        </p>
+                        <p>
+                          Job Type:
+                          <b className=" text-brand1 ms-[2px]">
+                            {jobItem.jobType}
+                          </b>
                         </p>
                         <p className=" mt-1">
                           Required No.:
-                          <b className="text-brand1">{jobItem.requiredNo}</b>
+                          <b className="text-brand1 ms-[2px]">
+                            {jobItem.requiredNo}
+                          </b>
                         </p>
                         <p className="my-1">
                           Minimum Qualification:
-                          <b className="text-brand1">
+                          <b className="text-brand1 ms-[2px]">
                             {jobItem.minQualification}
                           </b>
                         </p>
                         <p>
-                          Salary:{" "}
-                          <b className="text-brand1">{jobItem.salary}</b>
+                          Salary:
+                          <b className="text-brand1 ms-[2px]">
+                            {jobItem.salary}
+                          </b>
                         </p>
                       </div>
                       <div className="flex items-center gap-4 mt-3">
                         <button
-                          onClick={openModal}
+                          onClick={() =>
+                            openModal(jobItem.country, jobItem.jobType)
+                          }
                           className="font-medium text-sm text-white border border-brand2 bg-brand2 hover:text-brand2 hover:bg-white px-2 py-1 rounded cursor-pointer transition-all duration-200 ease-linear"
                         >
                           Apply Now
@@ -122,7 +140,8 @@ const Index = () => {
                     <ApplyForm
                       closeModal={closeModal}
                       jobTitle={jobTitle}
-                      country={jobItem.country}
+                      country={modalCountry}
+                      jobType={modalJobType}
                     />
                   </Modal>
                 )}

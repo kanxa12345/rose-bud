@@ -1,29 +1,32 @@
 import React, { useEffect, useState } from "react";
 import { FaXmark } from "react-icons/fa6";
 
-const ApplyForm = ({ closeModal, jobTitle, country }) => {
+const ApplyForm = ({ closeModal, jobTitle, country, jobType }) => {
   const initialFormData = {
     name: "",
     address: "",
     contact: "",
     email: "",
     country: "",
-    job: "",
+    jobType: "",
     photo: null,
     cv: null,
   };
 
   useEffect(() => {
-    initialFormData.country = country;
-  }, [initialFormData.country, country]);
+    if (country || jobType) {
+      setFormData({ ...formData, country: country, jobType: jobType }); // Set the specific country
+    }
+  }, [country, jobType]);
 
   // Create state for form data
   const [formData, setFormData] = useState(initialFormData);
   // Handle form input changes
   const handleInputChange = (e) => {
-    const { name, value } = e.target;
-    setFormData({ ...formData, [name]: value });
+    const { name, value, files } = e.target;
+    setFormData({ ...formData, [name]: name === "photo" || name === "cv" ? files[0] : value });
   };
+  
 
   // Handle form submission
   const handleSubmit = (e) => {
@@ -118,12 +121,12 @@ const ApplyForm = ({ closeModal, jobTitle, country }) => {
             />
           </div>
           <div className="flex flex-col items-start p-1 gap-1 w-full">
-            <label htmlFor="job">Job Type</label>
+            <label htmlFor="jobType">Job Type</label>
             <input
               type="text"
-              id="job"
-              name="job"
-              value={formData.job}
+              id="jobType"
+              name="jobType"
+              value={formData.jobType}
               onChange={handleInputChange}
               required
               className="focus:outline-none w-full bg-white p-1 border border-black rounded"
