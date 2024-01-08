@@ -13,7 +13,7 @@ const About = () => {
             width={2000}
             height={2000}
             alt="image"
-            className="w-2/3 h-80 object-cover relative z-[1] hover:z-10 border-2 border-white"
+            className="w-2/3 h-80 object-cover relative z-[1] border-2 border-white"
           />
           <Image
             src="/images/about2.jpg"
