@@ -8,7 +8,6 @@ const data = [
         companyName: 'Demo',
         requiredNo: '65',
         minQualification: 'Masters in Realted Field',
-        salary: '60,000 to 70,000',
         description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsam facere adipisci, perferendis sint nobis tempore. Vel temporibus et nobis illo. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloribus corrupti tenetur at nihil numquam debitis commodi assumenda ducimus. Quod quas adipisci excepturi, rem mollitia sed repudiandae saepe vel accusamus hic totam quidem quo assumenda illum ea eum eveniet aliquam, sint quia laboriosam qui expedita impedit? Debitis dolores necessitatibus eligendi aliquid?',
     },
     {
@@ -20,7 +19,6 @@ const data = [
         companyName: 'Demo',
         requiredNo: '50',
         minQualification: 'Masters in Realted Field',
-        salary: '80,000 to 90,000',
         description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsam facere adipisci, perferendis sint nobis tempore. Vel temporibus et nobis illo. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloribus corrupti tenetur at nihil numquam debitis commodi assumenda ducimus. Quod quas adipisci excepturi, rem mollitia sed repudiandae saepe vel accusamus hic totam quidem quo assumenda illum ea eum eveniet aliquam, sint quia laboriosam qui expedita impedit? Debitis dolores necessitatibus eligendi aliquid?'
     },
     {
@@ -32,7 +30,6 @@ const data = [
         companyName: 'Demo',
         requiredNo: '65',
         minQualification: 'Masters in Realted Field',
-        salary: '60,000 to 70,000',
         description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsam facere adipisci, perferendis sint nobis tempore. Vel temporibus et nobis illo. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloribus corrupti tenetur at nihil numquam debitis commodi assumenda ducimus. Quod quas adipisci excepturi, rem mollitia sed repudiandae saepe vel accusamus hic totam quidem quo assumenda illum ea eum eveniet aliquam, sint quia laboriosam qui expedita impedit? Debitis dolores necessitatibus eligendi aliquid?',
     },
     {
@@ -44,7 +41,6 @@ const data = [
         companyName: 'Demo',
         requiredNo: '50',
         minQualification: 'Masters in Realted Field',
-        salary: '80,000 to 90,000',
         description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsam facere adipisci, perferendis sint nobis tempore. Vel temporibus et nobis illo. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloribus corrupti tenetur at nihil numquam debitis commodi assumenda ducimus. Quod quas adipisci excepturi, rem mollitia sed repudiandae saepe vel accusamus hic totam quidem quo assumenda illum ea eum eveniet aliquam, sint quia laboriosam qui expedita impedit? Debitis dolores necessitatibus eligendi aliquid?'
     },
     {
@@ -56,7 +52,6 @@ const data = [
         companyName: 'Demo',
         requiredNo: '65',
         minQualification: 'Masters in Realted Field',
-        salary: '60,000 to 70,000',
         description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsam facere adipisci, perferendis sint nobis tempore. Vel temporibus et nobis illo. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloribus corrupti tenetur at nihil numquam debitis commodi assumenda ducimus. Quod quas adipisci excepturi, rem mollitia sed repudiandae saepe vel accusamus hic totam quidem quo assumenda illum ea eum eveniet aliquam, sint quia laboriosam qui expedita impedit? Debitis dolores necessitatibus eligendi aliquid?',
     },
     {
@@ -68,7 +63,6 @@ const data = [
         companyName: 'Demo',
         requiredNo: '50',
         minQualification: 'Masters in Realted Field',
-        salary: '80,000 to 90,000',
         description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsam facere adipisci, perferendis sint nobis tempore. Vel temporibus et nobis illo. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloribus corrupti tenetur at nihil numquam debitis commodi assumenda ducimus. Quod quas adipisci excepturi, rem mollitia sed repudiandae saepe vel accusamus hic totam quidem quo assumenda illum ea eum eveniet aliquam, sint quia laboriosam qui expedita impedit? Debitis dolores necessitatibus eligendi aliquid?'
     },
     {
@@ -80,7 +74,6 @@ const data = [
         companyName: 'Demo',
         requiredNo: '65',
         minQualification: 'Masters in Realted Field',
-        salary: '60,000 to 70,000',
         description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsam facere adipisci, perferendis sint nobis tempore. Vel temporibus et nobis illo. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloribus corrupti tenetur at nihil numquam debitis commodi assumenda ducimus. Quod quas adipisci excepturi, rem mollitia sed repudiandae saepe vel accusamus hic totam quidem quo assumenda illum ea eum eveniet aliquam, sint quia laboriosam qui expedita impedit? Debitis dolores necessitatibus eligendi aliquid?',
     },
     {
@@ -92,7 +85,6 @@ const data = [
         companyName: 'Demo',
         requiredNo: '50',
         minQualification: 'Masters in Realted Field',
-        salary: '80,000 to 90,000',
         description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsam facere adipisci, perferendis sint nobis tempore. Vel temporibus et nobis illo. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloribus corrupti tenetur at nihil numquam debitis commodi assumenda ducimus. Quod quas adipisci excepturi, rem mollitia sed repudiandae saepe vel accusamus hic totam quidem quo assumenda illum ea eum eveniet aliquam, sint quia laboriosam qui expedita impedit? Debitis dolores necessitatibus eligendi aliquid?',
     },
     {
@@ -104,7 +96,6 @@ const data = [
         companyName: 'Demo',
         requiredNo: '65',
         minQualification: 'Masters in Realted Field',
-        salary: '60,000 to 70,000',
         description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsam facere adipisci, perferendis sint nobis tempore. Vel temporibus et nobis illo. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloribus corrupti tenetur at nihil numquam debitis commodi assumenda ducimus. Quod quas adipisci excepturi, rem mollitia sed repudiandae saepe vel accusamus hic totam quidem quo assumenda illum ea eum eveniet aliquam, sint quia laboriosam qui expedita impedit? Debitis dolores necessitatibus eligendi aliquid?',
     },
     {
@@ -116,7 +107,6 @@ const data = [
         companyName: 'Demo',
         requiredNo: '50',
         minQualification: 'Masters in Realted Field',
-        salary: '80,000 to 90,000',
         description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsam facere adipisci, perferendis sint nobis tempore. Vel temporibus et nobis illo. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloribus corrupti tenetur at nihil numquam debitis commodi assumenda ducimus. Quod quas adipisci excepturi, rem mollitia sed repudiandae saepe vel accusamus hic totam quidem quo assumenda illum ea eum eveniet aliquam, sint quia laboriosam qui expedita impedit? Debitis dolores necessitatibus eligendi aliquid?'
     },
     {
@@ -128,7 +118,6 @@ const data = [
         companyName: 'Demo',
         requiredNo: '65',
         minQualification: 'Masters in Realted Field',
-        salary: '60,000 to 70,000',
         description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsam facere adipisci, perferendis sint nobis tempore. Vel temporibus et nobis illo. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloribus corrupti tenetur at nihil numquam debitis commodi assumenda ducimus. Quod quas adipisci excepturi, rem mollitia sed repudiandae saepe vel accusamus hic totam quidem quo assumenda illum ea eum eveniet aliquam, sint quia laboriosam qui expedita impedit? Debitis dolores necessitatibus eligendi aliquid?'
     },
     {
@@ -140,7 +129,6 @@ const data = [
         companyName: 'Demo',
         requiredNo: '50',
         minQualification: 'Masters in Realted Field',
-        salary: '80,000 to 90,000',
         description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsam facere adipisci, perferendis sint nobis tempore. Vel temporibus et nobis illo. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloribus corrupti tenetur at nihil numquam debitis commodi assumenda ducimus. Quod quas adipisci excepturi, rem mollitia sed repudiandae saepe vel accusamus hic totam quidem quo assumenda illum ea eum eveniet aliquam, sint quia laboriosam qui expedita impedit? Debitis dolores necessitatibus eligendi aliquid?'
     },
     {
@@ -152,7 +140,6 @@ const data = [
         companyName: 'Demo',
         requiredNo: '65',
         minQualification: 'Masters in Realted Field',
-        salary: '60,000 to 70,000',
         description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsam facere adipisci, perferendis sint nobis tempore. Vel temporibus et nobis illo. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloribus corrupti tenetur at nihil numquam debitis commodi assumenda ducimus. Quod quas adipisci excepturi, rem mollitia sed repudiandae saepe vel accusamus hic totam quidem quo assumenda illum ea eum eveniet aliquam, sint quia laboriosam qui expedita impedit? Debitis dolores necessitatibus eligendi aliquid?',
     },
     {
@@ -164,7 +151,6 @@ const data = [
         companyName: 'Demo',
         requiredNo: '50',
         minQualification: 'Masters in Realted Field',
-        salary: '80,000 to 90,000',
         description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsam facere adipisci, perferendis sint nobis tempore. Vel temporibus et nobis illo. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloribus corrupti tenetur at nihil numquam debitis commodi assumenda ducimus. Quod quas adipisci excepturi, rem mollitia sed repudiandae saepe vel accusamus hic totam quidem quo assumenda illum ea eum eveniet aliquam, sint quia laboriosam qui expedita impedit? Debitis dolores necessitatibus eligendi aliquid?'
     },
     {
@@ -176,7 +162,6 @@ const data = [
         companyName: 'Demo',
         requiredNo: '65',
         minQualification: 'Masters in Realted Field',
-        salary: '60,000 to 70,000',
         description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsam facere adipisci, perferendis sint nobis tempore. Vel temporibus et nobis illo. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloribus corrupti tenetur at nihil numquam debitis commodi assumenda ducimus. Quod quas adipisci excepturi, rem mollitia sed repudiandae saepe vel accusamus hic totam quidem quo assumenda illum ea eum eveniet aliquam, sint quia laboriosam qui expedita impedit? Debitis dolores necessitatibus eligendi aliquid?'
     },
     {
@@ -188,7 +173,6 @@ const data = [
         companyName: 'Demo',
         requiredNo: '50',
         minQualification: 'Masters in Realted Field',
-        salary: '80,000 to 90,000',
         description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsam facere adipisci, perferendis sint nobis tempore. Vel temporibus et nobis illo. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloribus corrupti tenetur at nihil numquam debitis commodi assumenda ducimus. Quod quas adipisci excepturi, rem mollitia sed repudiandae saepe vel accusamus hic totam quidem quo assumenda illum ea eum eveniet aliquam, sint quia laboriosam qui expedita impedit? Debitis dolores necessitatibus eligendi aliquid?'
     },
     {
@@ -200,7 +184,6 @@ const data = [
         companyName: 'Demo',
         requiredNo: '65',
         minQualification: 'Masters in Realted Field',
-        salary: '60,000 to 70,000',
         description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsam facere adipisci, perferendis sint nobis tempore. Vel temporibus et nobis illo. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloribus corrupti tenetur at nihil numquam debitis commodi assumenda ducimus. Quod quas adipisci excepturi, rem mollitia sed repudiandae saepe vel accusamus hic totam quidem quo assumenda illum ea eum eveniet aliquam, sint quia laboriosam qui expedita impedit? Debitis dolores necessitatibus eligendi aliquid?'
     },
     {
@@ -212,7 +195,6 @@ const data = [
         companyName: 'Demo',
         requiredNo: '50',
         minQualification: 'Masters in Realted Field',
-        salary: '80,000 to 90,000',
         description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsam facere adipisci, perferendis sint nobis tempore. Vel temporibus et nobis illo. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloribus corrupti tenetur at nihil numquam debitis commodi assumenda ducimus. Quod quas adipisci excepturi, rem mollitia sed repudiandae saepe vel accusamus hic totam quidem quo assumenda illum ea eum eveniet aliquam, sint quia laboriosam qui expedita impedit? Debitis dolores necessitatibus eligendi aliquid?'
     },
 ]

@@ -56,7 +56,7 @@ const Banner = () => {
             </div>
             <div className="container h-full w-full absolute flex items-center inset-0 pt-[78px]">
               <div className="w-1/2">
-                <h1 className="text-5xl font-semibold">
+                <h1 className="text-6xl font-semibold">
                     <span className="mr-1 text-brand1">{item.slogan.split(" ")[0]}</span>
                     {item.slogan.split(" ").slice(1).join(" ")}
                     </h1>

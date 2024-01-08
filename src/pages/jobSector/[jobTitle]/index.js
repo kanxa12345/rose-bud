@@ -52,22 +52,22 @@ const Index = () => {
       <section className="py-20 bg-gray-50">
         <div className="container flex flex-col items-center gap-6">
           <h2 className="text-2xl font-medium">{jobTitle}</h2>
-          <div className="w-full grid grid-cols-2 gap-10">
+          <div className="w-full grid grid-cols-4 gap-8">
             {data.map((jobItem, jobId) => (
               <div key={jobId}>
-                <div className="shadow-[0_0_5px_1px_rgba(0,0,0,0.1)] bg-white px-4 py-6 rounded-lg">
-                  <div className="flex sm:flex-row flex-col gap-8">
-                    <div className="sm:w-1/2 w-full">
+                <div className="shadow-[0_0_5px_1px_rgba(0,0,0,0.1)] bg-white p-4 rounded">
+                  <div className="flex flex-col gap-1">
+                    <div className="w-full">
                       <Image
                         src={jobItem.imageUrl}
                         priority={true}
                         height={2000}
                         width={2000}
                         alt={jobItem.jobTitle}
-                        className="w-full lg:h-52 md:h-44 lg-28 object-cover"
+                        className="w-full lg:h-48 md:h-44 lg-28 object-cover"
                       />
                     </div>
-                    <div className="flex flex-col items-start gap-2">
+                    <div className="flex flex-col items-start gap-1">
                       <h3 className="flex items-center gap-1">
                         <FaMapMarkerAlt />
                         <span className="text-xl font-medium">
@@ -81,54 +81,29 @@ const Index = () => {
                             {jobItem.companyName}
                           </b>
                         </p>
-                        <p>
-                          Job Type:
-                          <b className=" text-brand1 ms-[2px]">
-                            {jobItem.jobType}
-                          </b>
-                        </p>
-                        <p className=" mt-1">
-                          Required No.:
-                          <b className="text-brand1 ms-[2px]">
-                            {jobItem.requiredNo}
-                          </b>
-                        </p>
-                        <p className="my-1">
-                          Minimum Qualification:
-                          <b className="text-brand1 ms-[2px]">
-                            {jobItem.minQualification}
-                          </b>
-                        </p>
-                        <p>
-                          Salary:
-                          <b className="text-brand1 ms-[2px]">
-                            {jobItem.salary}
-                          </b>
-                        </p>
-                      </div>
-                      <div className="flex items-center gap-4 mt-3">
-                        <button
-                          onClick={() =>
-                            openModal(jobItem.country, jobItem.jobType)
-                          }
-                          className="font-medium text-sm text-white border border-brand2 bg-brand2 hover:text-brand2 hover:bg-white px-2 py-1 rounded cursor-pointer transition-all duration-200 ease-linear"
-                        >
-                          Apply Now
-                        </button>
-                        <Link
-                          href={`/jobSector/${jobTitle}/${jobItem.country}`}
-                          className="font-medium text-sm flex text-white py-1 px-2 rounded bg-brand1 border border-brand1 transition-all duration-200 ease-linear hover:bg-white hover:text-brand1"
-                        >
-                          View Details
-                        </Link>
                       </div>
                     </div>
                   </div>
-                  <div className="border-t mt-5">
-                    <h3 className="text-xl font-medium my-1">Description</h3>
-                    <p className="text-gray-700 sm:text-base text-sm">
-                      {jobItem.description.substring(0, 150)}...
+                  <div className="mt-2">
+                    <p className="text-gray-700 text-sm">
+                      {jobItem.description.substring(0, 100)}...
                     </p>
+                    <div className="flex items-center gap-4 mt-3">
+                      <button
+                        onClick={() =>
+                          openModal(jobItem.country, jobItem.jobType)
+                        }
+                        className="text-xs text-white border border-blue-950 bg-blue-950 hover:text-blue-950 hover:bg-white px-2 py-1 cursor-pointer transition-all duration-200 ease-linear"
+                      >
+                        Apply Now
+                      </button>
+                      <Link
+                        href={`/jobSector/${jobTitle}/${jobItem.country}`}
+                        className="text-xs flex text-white py-1 px-2 bg-brand1 border border-brand1 transition-all duration-200 ease-linear hover:bg-white hover:text-brand1"
+                      >
+                        View Details
+                      </Link>
+                    </div>
                   </div>
                 </div>
                 {modalIsOpen && (

@@ -16,7 +16,7 @@ const Index = () => {
     (item) => item.jobTitle === jobTitle && item.country === country
   );
 
-  console.log(data)
+  console.log(data);
 
   const openModal = () => {
     setModalIsOpen(true);
@@ -54,39 +54,37 @@ const Index = () => {
           </ul>
         </div>
       </section>
-      <section className="py-20 bg-gray-50">
+      <section className="py-20">
         {data && (
           <div className="container flex gap-8">
             <div className="w-2/3 flex flex-col items-start gap-2">
               <small className="text-base font-medium text-gray-500">
-                {jobTitle}
+                {country}
               </small>
-              <h2 className="text-2xl font-medium">{country}</h2>
+              <h2 className="text-2xl font-medium">{jobTitle}</h2>
               <div className="flex flex-col items-start gap-1">
+                <p className="text-gray-700">{data.description}</p>
+
                 <p className="text-brand1 font-medium">
-                  <span className="text-black">Company Name:</span>{" "}
+                  <span className="text-black">Company Name:</span>
                   {data.companyName}
                 </p>
                 <p className="text-brand1 font-medium">
-                  <span className="text-black">Job Type:</span>{" "}
+                  <span className="text-black">Job Type:</span>
                   {data.jobType}
                 </p>
                 <p className="text-brand1 font-medium">
-                  <span className="text-black">Min. Qualification:</span>{" "}
+                  <span className="text-black">Min. Qualification:</span>
                   {data.minQualification}
                 </p>
                 <p className="text-brand1 font-medium">
-                  <span className="text-black">Required No.:</span>{" "}
+                  <span className="text-black">Required No.:</span>
                   {data.requiredNo}
                 </p>
-                <p className="text-brand1 font-medium">
-                  <span className="text-black">Salary:</span> {data.salary}
-                </p>
-                <p className="text-gray-600">{data?.description}</p>
               </div>
               <button
                 onClick={openModal}
-                className="font-medium text-sm text-white border border-brand2 bg-brand2 hover:text-brand2 hover:bg-white px-2 py-1 rounded cursor-pointer transition-all duration-200 ease-linear"
+                className="font-medium text-sm text-white border border-blue-950 bg-blue-950 hover:text-blue-950 hover:bg-white px-2 py-1 rounded cursor-pointer transition-all duration-200 ease-linear"
               >
                 Apply Now
               </button>

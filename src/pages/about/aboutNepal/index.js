@@ -58,7 +58,6 @@ const Index = () => {
                 warm hospitality to all who visit.
               </p>
             </div>
-            <a href="https://www.nepal.com/" target="_blank" rel="noreferrer" className="text-white border border-brand2 bg-brand2 hover:text-brand2 hover:bg-white px-2 py-1 rounded cursor-pointer transition-all duration-200 ease-linear">More About Nepal</a>
           </div>
           <div className="flex justify-center w-1/3">
             <Image src="/images/nisan-chhap.webp" priority={true} width={2000} height={2000} alt="nisan chhap" className="w-full h-72 object-contain" />
