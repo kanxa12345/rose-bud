@@ -61,30 +61,29 @@ const Index = () => {
               <small className="text-base font-medium text-gray-500">
                 {country}
               </small>
-              <h2 className="text-2xl font-medium">{jobTitle}</h2>
-              <div className="flex flex-col items-start gap-1">
+              <h2 className="text-2xl font-semibold">{jobTitle}</h2>
+              <div className="flex flex-col items-start gap-2">
                 <p className="text-gray-700">{data.description}</p>
-
-                <p className="text-brand1 font-medium">
-                  <span className="text-black">Company Name:</span>
+                <p className="text-brand1 text-lg font-medium">
+                  <span className="text-black me-[2px]">Company Name:</span>
                   {data.companyName}
                 </p>
-                <p className="text-brand1 font-medium">
-                  <span className="text-black">Job Type:</span>
+                <p className="text-brand1 text-lg font-medium">
+                  <span className="text-black me-[2px]">Job Type:</span>
                   {data.jobType}
                 </p>
-                <p className="text-brand1 font-medium">
-                  <span className="text-black">Min. Qualification:</span>
+                <p className="text-brand1 text-lg font-medium">
+                  <span className="text-black me-[2px]">Min. Qualification:</span>
                   {data.minQualification}
                 </p>
-                <p className="text-brand1 font-medium">
-                  <span className="text-black">Required No.:</span>
+                <p className="text-brand1 text-lg font-medium">
+                  <span className="text-black me-[2px]">Required No.:</span>
                   {data.requiredNo}
                 </p>
               </div>
               <button
                 onClick={openModal}
-                className="font-medium text-sm text-white border border-blue-950 bg-blue-950 hover:text-blue-950 hover:bg-white px-2 py-1 rounded cursor-pointer transition-all duration-200 ease-linear"
+                className="font-medium text-white border border-blue-950 bg-blue-950 hover:text-blue-950 hover:bg-white px-2 py-1 cursor-pointer transition-all duration-200 ease-linear"
               >
                 Apply Now
               </button>

@@ -17,7 +17,7 @@ const Client = () => {
     "/images/clients-images/rs.png",
   ];
   return (
-    <section className="py-20 bg-gradient-to-r from-brand1 to-brand2 text-white">
+    <section className="py-20 bg-gradient-to-r from-brand1 to-blue-950 text-white">
       <div className="container flex flex-col items-center gap-6">
         <h2 className="text-2xl font-medium">Our Clients</h2>
         <div className="w-full">
