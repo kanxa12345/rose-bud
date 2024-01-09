@@ -84,6 +84,9 @@ const Header = () => {
             <li>
               <Link href="/jobSector">Job Sectors</Link>
             </li>
+            <li>
+              <Link href="/demand">Current Demand</Link>
+            </li>
             <li
               onMouseLeave={() => setGalleryMenu(false)}
               className={`relative py-6 ${
