@@ -13,20 +13,25 @@ const ApplyForm = ({ closeModal, jobTitle, country, jobType }) => {
     cv: null,
   };
 
-  useEffect(() => {
-    if (country || jobType) {
-      setFormData({ ...formData, country: country, jobType: jobType }); // Set the specific country
-    }
-  }, [country, jobType]);
-
-  // Create state for form data
   const [formData, setFormData] = useState(initialFormData);
+
+  useEffect(() => {
+    if (!formData.country && country) {
+      setFormData((prevData) => ({ ...prevData, country: country }));
+    }
+    if (!formData.jobType && jobType) {
+      setFormData((prevData) => ({ ...prevData, jobType: jobType }));
+    }
+  }, [formData, country, jobType]);
+
   // Handle form input changes
   const handleInputChange = (e) => {
     const { name, value, files } = e.target;
-    setFormData({ ...formData, [name]: name === "photo" || name === "cv" ? files[0] : value });
+    setFormData({
+      ...formData,
+      [name]: name === "photo" || name === "cv" ? files[0] : value,
+    });
   };
-  
 
   // Handle form submission
   const handleSubmit = (e) => {
@@ -140,7 +145,6 @@ const ApplyForm = ({ closeModal, jobTitle, country, jobType }) => {
               type="file"
               id="photo"
               name="photo"
-              value={formData.photo}
               onChange={handleInputChange}
               required
               className="focus:outline-none w-full p-1 rounded"
@@ -152,7 +156,6 @@ const ApplyForm = ({ closeModal, jobTitle, country, jobType }) => {
               type="file"
               id="cv"
               name="cv"
-              value={formData.cv}
               onChange={handleInputChange}
               required
               className="focus:outline-none w-full p-1 rounded"

@@ -38,10 +38,6 @@ const NewspaperModal = (props) => {
   }, [index]);
 
   useEffect(() => {
-    setImageIndex(index);
-  }, [modalIsOpen]);
-
-  useEffect(() => {
     if (imageIndex < 0) {
       setImageIndex(0);
     } else if (imageIndex >= images.length) {

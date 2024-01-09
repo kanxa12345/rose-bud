@@ -26,7 +26,7 @@ const FeatureJob = () => {
           {Object.values(jobFolder)
             .slice(0, 4)
             .map((jobItem, id) => (
-              <Link href={`/jobSector/${jobItem.jobTitle}`} key={id} className="relative shadow-lg flex after:absolute after:w-0 after:h-0 after:flex after:justify-center after:items-center after:top-1/2 after:left-1/2 after:-translate-x-1/2 after:-translate-y-1/2 after:content-['Click_Here'] after:text-lg after:font-semibold after:z-20 after:text-brand1 after:opacity-0 after:bg-gray-100 hover:after:opacity-100 hover:after:bg-opacity-80 hover:after:w-[95%] hover:after:h-[95%] after:transition-all after:duration-300 after:ease-linear">
+              <Link href={`/jobSector/${jobItem.jobTitle}`} key={id} className="relative shadow-lg flex after:absolute after:w-0 after:h-0 after:flex after:justify-center after:items-center after:top-1/2 after:left-1/2 after:-translate-x-1/2 after:-translate-y-1/2 after:content-['Click_Here'] after:text-lg after:font-semibold after:z-20 after:text-white after:opacity-0 after:bg-blue-950 hover:after:opacity-100 hover:after:bg-opacity-80 hover:after:w-full hover:after:h-full after:transition-all after:duration-300 after:ease-linear">
                 <Image
                   src={jobItem.thumbnailImage}
                   priority={true}

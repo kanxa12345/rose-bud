@@ -16,7 +16,6 @@ const Index = () => {
     (item) => item.jobTitle === jobTitle && item.country === country
   );
 
-  console.log(data);
 
   const openModal = () => {
     setModalIsOpen(true);
@@ -95,7 +94,7 @@ const Index = () => {
                 width={2000}
                 height={2000}
                 alt={jobTitle}
-                className="w-full h-80 object-cover rounded-se-[30px] rounded-es-[30px] border-2 border-brand1 p-[2px]"
+                className="w-full h-80 object-cover rounded-se-[30px] rounded-es-[30px]"
               />
             </div>
           </div>

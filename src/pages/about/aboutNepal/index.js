@@ -35,14 +35,14 @@ const Index = () => {
                 The capital city, Kathmandu, is a vibrant hub of ancient
                 temples, palaces, and traditional architecture. UNESCO World
                 Heritage Sites like Durbar Square, Pashupatinath Temple,
-                Swayambhunath Stupa, and Boudhanath Stupa showcase the country's
+                Swayambhunath Stupa, and Boudhanath Stupa showcase the country&apos;s
                 historical and religious significance.
               </p>
 
               <p>
-                Nepal is renowned as a trekker's paradise, with famous routes
+                Nepal is renowned as a trekker&apos;s paradise, with famous routes
                 like the Annapurna Circuit and Everest Base Camp attracting
-                adventurers from around the world. The country's national parks,
+                adventurers from around the world. The country&apos;s national parks,
                 such as Chitwan and Sagarmatha, offer opportunities to witness
                 diverse wildlife, including tigers, rhinoceros, elephants, and
                 rare bird species.

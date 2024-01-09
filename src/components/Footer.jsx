@@ -26,7 +26,7 @@ const Footer = () => {
               width={2000}
               height={2000}
               alt="logo"
-              className="w-24"
+              className="w-28"
             />
             <div className="flex items-center gap-3">
               <a
@@ -126,7 +126,7 @@ const Footer = () => {
             </div>
           </div>
         </div>
-        <div className="text-sm text-center text-gray-200 py-3 border-t border-gray-400">
+        <div className="text-sm text-center text-gray-200 pt-3 pb-6 border-t border-gray-400">
           <p>
             Copyright &copy; {year} all rights reserved. Rosebud Human Resource
             Pvt. Ltd.
