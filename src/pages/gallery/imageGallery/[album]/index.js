@@ -32,8 +32,8 @@ const Album = () => {
       <section className="py-20">
         <div className="container flex flex-col items-center gap-6">
           <h2 className="text-2xl font-medium">
-            <span className="text-brand1">{album.split(" ")[0]}</span>{" "}
-            {album.split(" ").slice(1).join("")}
+            <span className="text-brand1">{album?.split(" ")[0]}</span>{" "}
+            {album?.split(" ").slice(1).join("")}
           </h2>
           <div className="grid xl:grid-cols-5 md:grid-cols-3 sm:grid-cols-2 gap-5 w-full">
             {data.map((dataItem, index) => (
