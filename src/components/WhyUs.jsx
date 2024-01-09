@@ -5,7 +5,7 @@ import React from "react";
 const WhyUs = () => {
   return (
     <section
-      className="py-20 relative text-white"
+      className="py-28 relative text-white"
       style={{
         backgroundImage: `url("/images/bg.jpg")`,
         backgroundRepeat: "no-repeat",
@@ -13,7 +13,7 @@ const WhyUs = () => {
         backgroundAttachment: "fixed",
       }}
     >
-      <div className="absolute w-full h-full inset-0 bg-gradient-to-r from-black to-blue-950 opacity-80"></div>
+      <div className="absolute w-full h-full inset-0 bg-gradient-to-r from-black to-blue-950 opacity-70"></div>
       <div className="container flex flex-col items-center gap-6 relative">
         <h2 className="text-2xl font-medium">
           Why <span className="text-brand1">From</span> RoseBud

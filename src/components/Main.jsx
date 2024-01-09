@@ -5,6 +5,7 @@ import Client from "./Client";
 import WhyUs from "./WhyUs";
 import About from "./About";
 import Mvv from "./Mvv";
+import FeatureJob from "./FeatureJob";
 
 const Main = () => {
   return (
@@ -12,6 +13,7 @@ const Main = () => {
       <Banner />
       <About />
       <WhyUs />
+      <FeatureJob />
       <Mvv />
       <Testimonial />
       <Client />

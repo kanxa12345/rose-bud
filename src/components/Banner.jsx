@@ -49,7 +49,7 @@ const Banner = () => {
                 priority={true}
                 height={6000}
                 width={6000}
-                className="w-full lg:h-[750px] md:h-[400px] sm:h-[300px] h-[200px] object-cover"
+                className="w-full lg:h-[800px] md:h-[400px] sm:h-[300px] h-[200px] object-cover"
                 alt="banner-image"
               />
               <div className="absolute w-full h-full inset-0 bg-gradient-to-t from-black to-gray-400 opacity-50"></div>
