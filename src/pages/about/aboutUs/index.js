@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 
@@ -17,12 +18,22 @@ const Index = () => {
         </div>
       </section>
       <section className="py-20 bg-gray-100">
-        <div className="container flex flex-col items-center gap-6">
-          <h2 className="text-4xl font-semibold text-black text-center">
-            <span className="text-brand1">RoseBud</span> Human Resource Pvt.
-            Ltd.
-          </h2>
+        <div className="container flex flex-col items-center gap-12">
+          <div className="w-full flex flex-col items-center gap-1">
+            <h2 className="text-2xl font-medium text-black text-center">
+              About Us
+            </h2>
+            <div className="flex items-center gap-4 w-full justify-center">
+              <span className="h-1 w-1/5 bg-gradient-to-r from-gray-400 to-red-400"></span>
+              <span className="inline-block w-2 h-2 bg-brand1 rotate-45"></span>
+              <span className="h-1 w-1/5 bg-gradient-to-r from-red-400 to-gray-400"></span>
+            </div>
+          </div>
           <div className="w-full flex flex-col gap-3 text-gray-600">
+            <h3 className="text-4xl font-semibold text-black">
+              <span className="text-brand1">RoseBud</span> Human Resource Pvt.
+              Ltd.
+            </h3>
             <p>
               To begin with,we would like to introduce Equator International
               Pvt.Ltd asone of the prominent and well-known Manpower Recruiting
@@ -49,11 +60,37 @@ const Index = () => {
           </div>
         </div>
       </section>
-      <section className="py-20 bg-brand2 bg-opacity-10">
-        <div className="container flex flex-col items-center gap-6">
+      <section className="bg-blue-950 bg-opacity-15 flex gap-8 items-center">
+        <Image
+          src="/images/img.avif"
+          priority={true}
+          width={2000}
+          height={2000}
+          alt="image"
+          className="h-[500px] w-1/2 object-cover"
+        />
+        <div className="flex flex-col items-start gap-4 w-[37%]">
           <h2 className="text-2xl font-medium text-brand1">Objective</h2>
           <div className="w-full">
-            <p>A manpower company, or staffing agency, sets out with multifaceted objectives aimed at creating a symbiotic relationship between clients and candidates. Central to its mission is ensuring client satisfaction by understanding and fulfilling their unique staffing needs. This involves not only the recruitment and placement of qualified candidates but also the cultivation of enduring client partnerships. Concurrently, the company is dedicated to building a robust talent pool through proactive sourcing, recruitment, and networking efforts, staying attuned to industry trends and evolving skill requirements. Upholding legal and ethical standards in recruitment practices is paramount, ensuring fair treatment of both clients and candidates. Continuous improvement forms the bedrock, encompassing internal processes, technology adoption, and employee development to stay abreast of market dynamics. Financial sustainability, brand building, and community engagement round out the objectives, creating a comprehensive approach for success in the dynamic staffing landscape.</p>
+            <p>
+              A manpower company, or staffing agency, sets out with multifaceted
+              objectives aimed at creating a symbiotic relationship between
+              clients and candidates. Central to its mission is ensuring client
+              satisfaction by understanding and fulfilling their unique staffing
+              needs. This involves not only the recruitment and placement of
+              qualified candidates but also the cultivation of enduring client
+              partnerships. Concurrently, the company is dedicated to building a
+              robust talent pool through proactive sourcing, recruitment, and
+              networking efforts, staying attuned to industry trends and
+              evolving skill requirements. Upholding legal and ethical standards
+              in recruitment practices is paramount, ensuring fair treatment of
+              both clients and candidates. Continuous improvement forms the
+              bedrock, encompassing internal processes, technology adoption, and
+              employee development to stay abreast of market dynamics. Financial
+              sustainability, brand building, and community engagement round out
+              the objectives, creating a comprehensive approach for success in
+              the dynamic staffing landscape.
+            </p>
           </div>
         </div>
       </section>
