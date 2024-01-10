@@ -55,11 +55,12 @@ const Banner = () => {
               <div className="absolute w-full h-full inset-0 bg-gradient-to-t from-black to-gray-400 opacity-50"></div>
             </div>
             <div className="container h-full w-full absolute flex items-center inset-0 pt-[78px]">
-              <div className="w-1/2">
+              <div className="w-1/2 flex flex-col items-start gap-3">
                 <h1 className="text-6xl font-semibold">
                     <span className="mr-1 text-brand1">{item.slogan.split(" ")[0]}</span>
                     {item.slogan.split(" ").slice(1).join(" ")}
                     </h1>
+                  <a href="#" className="font-medium text-white border border-blue-950 hover:border-white bg-blue-950 hover:text-white hover:bg-white hover:bg-opacity-10 px-2 py-1 cursor-pointer transition-all duration-200 ease-linear">Company Profile</a>
               </div>
             </div>
           </SwiperSlide>
