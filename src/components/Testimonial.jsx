@@ -15,7 +15,7 @@ import TestimonialData from "@/data/TestimonialData";
 
 const Testimonial = () => {
   return (
-    <section className="py-20 bg-gray-50">
+    <section className="py-20 bg-gray-100">
       <div className="container flex flex-col items-center gap-6">
         <h2 className="text-2xl font-medium text-brand1">Testimonial</h2>
         <div className="w-2/3 text-gray-600">
@@ -31,7 +31,7 @@ const Testimonial = () => {
               "--swiper-theme-color": "red",
               "--swiper-pagination-bullet-inactive-opacity": "0.7",
               "--swiper-navigation-size": "25px",
-              "--swiper-navigation-background": "#000",
+              // "--swiper-navigation-background": "#000",
             }}
             autoplay={{ delay: 5000 }}
           >

@@ -4,7 +4,7 @@ import React from "react";
 
 const Mvv = () => {
   return (
-    <section className="h-full bg-gray-50">
+    <section className="h-full bg-gray-100">
       <div
         className="element h-full bg-indigo-950 py-48 relative"
         style={{

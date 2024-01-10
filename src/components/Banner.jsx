@@ -60,7 +60,7 @@ const Banner = () => {
                     <span className="mr-1 text-brand1">{item.slogan.split(" ")[0]}</span>
                     {item.slogan.split(" ").slice(1).join(" ")}
                     </h1>
-                  <a href="#" className="font-medium text-white border border-blue-950 hover:border-white bg-blue-950 hover:text-white hover:bg-white hover:bg-opacity-10 px-2 py-1 cursor-pointer transition-all duration-200 ease-linear">Company Profile</a>
+                  <a href="#" target="_blank" rel="noreferrer" className="font-medium text-white border border-blue-950 hover:border-white bg-blue-950 hover:text-white hover:bg-white hover:bg-opacity-10 px-2 py-1 cursor-pointer transition-all duration-200 ease-linear">Company Profile</a>
               </div>
             </div>
           </SwiperSlide>
