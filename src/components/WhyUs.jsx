@@ -1,11 +1,12 @@
-import WhyUsData from "@/data/WhyUsData";
 import Image from "next/image";
+import Link from "next/link";
 import React from "react";
+import WhyUsData from "@/data/WhyUsData";
 
 const WhyUs = () => {
   return (
     <section
-      className="py-28 relative text-white"
+      className="py-10 relative text-white"
       style={{
         backgroundImage: `url("/images/bg.jpg")`,
         backgroundRepeat: "no-repeat",
@@ -14,19 +15,20 @@ const WhyUs = () => {
       }}
     >
       <div className="absolute w-full h-full inset-0 bg-gradient-to-r from-black to-blue-950 opacity-70"></div>
-      <div className="container flex flex-col items-center gap-6 relative">
+      <div className="container flex flex-col items-center gap-8 relative">
         <h2 className="text-2xl font-medium">
           Why <span className="text-brand1">From</span> RoseBud
         </h2>
         <div className="w-full grid grid-cols-4 gap-6">
             {WhyUsData.map((item, id)=>(
-                <div key={id} className="flex flex-col items-center gap-1 bg-white bg-opacity-80 p-4 text-black rounded">
+                <div key={id} className="flex flex-col items-center gap-2 bg-brand1 bg-opacity-90 px-4 py-14 text-black rounded">
                     <Image src={item.iconImage} priority={true} height={2000} width={2000} alt={item.title} className="h-16 w-auto" />
-                    <h3 className="text-xl font-bold text-brand1">{item.title.toUpperCase()}</h3>
-                    <p className="text-sm text-center text-gray-950">{item.description}</p>
+                    <h3 className="text-xl font-bold text-white">{item.title.toUpperCase()}</h3>
+                    <p className="text-center text-gray-200">{item.description.substring(0,100)}</p>
                 </div>
             ))}
         </div>
+        <Link href="/whyUs" className="text-white border border-blue-950 bg-blue-950 hover:text-blue-950 hover:bg-white px-2 py-1 cursor-pointer transition-all duration-200 ease-linear">View Details</Link>
       </div>
     </section>
   );

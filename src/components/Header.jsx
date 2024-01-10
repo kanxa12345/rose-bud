@@ -66,7 +66,7 @@ const Header = () => {
             width={2000}
             height={2000}
             alt="logo"
-            className="w-[60px]"
+            className="w-[100px]"
           />
         </Link>
         <nav>
@@ -80,7 +80,7 @@ const Header = () => {
             <li
               onClick={() => handleButtonClick(1)}
               onMouseLeave={() => setAboutMenu(false)}
-              className={`relative py-6 hover:text-brand1 ${
+              className={`relative py-8 hover:text-brand1 ${
                 aboutMenu ? "overflow-visible" : "overflow-hidden"
               } `}
             >
@@ -92,7 +92,7 @@ const Header = () => {
               </button>
               <div
                 className={`flex flex-col gap-1 absolute w-60 left-0 bg-brand2 bg-opacity-90 text-white transition-all duration-100 ease-linear ${
-                  aboutMenu ? "top-[72px] opacity-100" : "top-24 opacity-0"
+                  aboutMenu ? "top-[89px] opacity-100" : "top-24 opacity-0"
                 }`}
               >
                 <Link href="/about/aboutUs" className="py-1 px-2 hover:bg-brand1">About Us</Link>
@@ -105,7 +105,7 @@ const Header = () => {
             <li
               onClick={() => handleButtonClick(2)}
               onMouseLeave={() => setServiceMenu(false)}
-              className={`relative py-6 hover:text-brand1 ${
+              className={`relative py-8 hover:text-brand1 ${
                 serviceMenu ? "overflow-visible" : "overflow-hidden"
               } `}
             >
@@ -117,7 +117,7 @@ const Header = () => {
               </button>
               <div
                 className={`flex flex-col gap-1 absolute w-60 left-0 bg-brand2 bg-opacity-90 text-white transition-all duration-100 ease-linear ${
-                  serviceMenu ? "top-[72px] opacity-100" : "top-24 opacity-0"
+                  serviceMenu ? "top-[89px] opacity-100" : "top-24 opacity-0"
                 }`}
               >
                 <Link href="/service/requiredDocument" className="py-1 px-2 hover:bg-brand1">Required Documents</Link>
@@ -141,7 +141,7 @@ const Header = () => {
             <li
               onClick={() => handleButtonClick(5)}
               onMouseLeave={() => setGalleryMenu(false)}
-              className={`relative py-6 hover:text-brand1 ${
+              className={`relative py-8 hover:text-brand1 ${
                 galleryMenu ? "overflow-visible" : "overflow-hidden"
               } `}
             >
@@ -153,7 +153,7 @@ const Header = () => {
               </button>
               <div
                 className={`flex flex-col gap-1 absolute w-40 left-0 bg-brand2 bg-opacity-90 text-white transition-all duration-100 ease-linear ${
-                  galleryMenu ? "top-[72px] opacity-100" : "top-24 opacity-0"
+                  galleryMenu ? "top-[89px] opacity-100" : "top-24 opacity-0"
                 }`}
               >
                 <Link href="/gallery/imageGallery" className="py-1 px-2 hover:bg-brand1">Image Gallery</Link>

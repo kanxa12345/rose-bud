@@ -14,7 +14,7 @@ const Mvv = () => {
           backgroundAttachment: "fixed",
         }}
       >
-        <div className="absolute w-full h-full inset-0 bg-gray-950 opacity-80"></div>
+        <div className="absolute w-full h-full inset-0 bg-gray-950 opacity-85"></div>
         <div className="container grid grid-cols-3 gap-8 relative">
           {MvvData.map((item, id) => (
             <div
@@ -29,7 +29,7 @@ const Mvv = () => {
                 className="w-16 h-16"
               />
               <h3 className="text-xl font-bold text-brand1">{item.title}</h3>
-              <p className="text-center text-sm">{item.description}</p>
+              <p className="text-center">{item.description}</p>
             </div>
           ))}
         </div>
