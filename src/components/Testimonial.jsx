@@ -15,7 +15,7 @@ import TestimonialData from "@/data/TestimonialData";
 
 const Testimonial = () => {
   return (
-    <section className="py-20">
+    <section className="py-20 bg-gray-50">
       <div className="container flex flex-col items-center gap-6">
         <h2 className="text-2xl font-medium text-brand1">Testimonial</h2>
         <div className="w-2/3 text-gray-600">
