@@ -18,15 +18,15 @@ const Index = () => {
         </div>
       </section>
       <section className="py-20 bg-gray-100">
-        <div className="container flex flex-col items-center gap-12">
+        <div className="container flex flex-col items-center gap-14">
           <div className="w-full flex flex-col items-center gap-1">
             <h2 className="text-2xl font-medium text-black text-center">
               About Us
             </h2>
             <div className="flex items-center gap-4 w-full justify-center">
-              <span className="h-1 w-1/5 bg-gradient-to-r from-gray-400 to-red-400"></span>
+              <span className="h-1 w-1/5 bg-gradient-to-r from-gray-300 to-red-400"></span>
               <span className="inline-block w-2 h-2 bg-brand1 rotate-45"></span>
-              <span className="h-1 w-1/5 bg-gradient-to-r from-red-400 to-gray-400"></span>
+              <span className="h-1 w-1/5 bg-gradient-to-r from-red-400 to-gray-300"></span>
             </div>
           </div>
           <div className="w-full flex flex-col gap-3 text-gray-600">

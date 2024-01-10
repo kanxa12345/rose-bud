@@ -18,23 +18,33 @@ const Index = () => {
         </div>
       </section>
       <section className="py-20 bg-gray-50">
-        <div className="container flex flex-col items-center gap-6">
-          <div className="flex gap-6 items-center">
-            <Image
-              src="/images/chairman.jpg"
-              priority={true}
-              width={2000}
-              height={2000}
-              alt="chairman"
-              className="w-52 h-40 object-cover"
-            />
-            <span>
-              <h2 className="text-2xl font-medium">Name Surname</h2>
-              <p className="text-lg font-medium text-gray-600">Chairman</p>
-            </span>
+        <div className="container flex flex-col items-center gap-14">
+          <div className="w-full flex flex-col items-center gap-1">
+            <h2 className="text-2xl font-medium text-black text-center">
+              Message From Chairman
+            </h2>
+            <div className="flex items-center gap-4 w-full justify-center">
+              <span className="h-1 w-1/5 bg-gradient-to-r from-gray-300 to-red-400"></span>
+              <span className="inline-block w-2 h-2 bg-brand1 rotate-45"></span>
+              <span className="h-1 w-1/5 bg-gradient-to-r from-red-400 to-gray-300"></span>
+            </div>
           </div>
-          <div className="flex items-start gap-10 w-full text-gray-800 p-6 bg-brand2 bg-opacity-10 rounded">
-            <div className="flex flex-col items-start gap-4 w-1/2">
+          <div className="flex gap-8">
+            <div className="flex flex-col gap-3 items-start  w-1/3">
+              <Image
+                src="/images/chairman.jpg"
+                priority={true}
+                width={2000}
+                height={2000}
+                alt="chairman"
+                className="w-full h-96 object-cover"
+              />
+              <span>
+                <h3 className="text-2xl font-semibold">Name Surname</h3>
+                <p className="text-lg font-medium text-brand1">Chairman</p>
+              </span>
+            </div>
+            <div className="flex flex-col items-start gap-4 w-2/3">
               <small className="text-lg font-medium text-gray-500">
                 Namaste everyone,
               </small>
@@ -52,8 +62,6 @@ const Index = () => {
                 Over more than two decades, we have continuously strived to
                 improve our business processes and systems.
               </p>
-            </div>
-            <div className="flex flex-col items-start gap-4 w-1/2">
               <p>
                 With the aim to make foreign employment more effective and
                 responsible, we are continuously coordinating with other
@@ -70,7 +78,9 @@ const Index = () => {
                 linked to this business, and not just one person, we therefore
                 understand that it is not just a business but a human service.
               </p>
-              <small className="text-lg font-medium text-gray-500">Thank you.</small>
+              <small className="text-lg font-medium text-gray-500">
+                Thank you.
+              </small>
             </div>
           </div>
         </div>
