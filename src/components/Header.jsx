@@ -28,7 +28,7 @@ const Header = () => {
     const determineActiveBlock = () => {
       const path = router.asPath; // Using asPath to get the full URL path
 
-      if (path === "/") {
+      if (path === "/" || path === "/whyUs") {
         return 0;
       } else if (path.startsWith("/about")) {
         return 1;
