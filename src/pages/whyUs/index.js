@@ -32,7 +32,9 @@ const Index = () => {
           </div>
           <div className="w-full grid grid-cols-2 gap-10">
             {WhyUsData.map((item, id) => (
-              <div key={id} className="flex flex-col items-center gap-4 p-5 rounded bg-brand1 text-white bg-opacity-90">
+              <div key={id} className="flex flex-col items-center gap-4 p-5 rounded bg-brand1 text-white bg-opacity-90"  data-aos="zoom-in"
+              data-aos-once="true"
+              data-aos-duration="2000">
                 <Image src={item.iconImage} priority={true} width={2000} height={2000} alt={item.title} className="w-24 h-24"/>
                 <h3 className="text-xl font-medium">{item.title.toUpperCase()}</h3>
                 <p className="text-gray-100">{item.description}</p>

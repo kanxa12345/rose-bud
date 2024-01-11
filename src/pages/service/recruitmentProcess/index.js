@@ -30,7 +30,9 @@ const Index = () => {
               <span className="h-1 w-1/5 bg-gradient-to-r from-red-400 to-gray-300"></span>
             </div>
           </div>
-          <div className="w-full">
+          <div className="w-full"  data-aos="zoom-in"
+              data-aos-once="true"
+              data-aos-duration="2000">
             <Image
               src="/images/recruitment-process.jpg"
               priority={true}
@@ -43,7 +45,9 @@ const Index = () => {
         </div>
       </section>
       <section className="py-20 bg-gray-100">
-        <div className="container flex flex-col items-start gap-4">
+        <div className="container flex flex-col items-start gap-4"  data-aos="fade-right"
+              data-aos-once="true"
+              data-aos-duration="2000">
           <h2 className="text-2xl font-semibold">
             Developing Foolproof Recruitment Process
           </h2>

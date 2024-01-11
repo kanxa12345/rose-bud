@@ -31,7 +31,12 @@ const Index = () => {
             </div>
           </div>
           <div className="w-full flex gap-6">
-            <div className="w-2/3 flex flex-col items-start gap-2">
+            <div
+              className="w-2/3 flex flex-col items-start gap-2"
+              data-aos="fade-right"
+              data-aos-once="true"
+              data-aos-duration="2000"
+            >
               <h2 className="text-2xl font-medium">Nepal</h2>
               <div className="flex flex-col gap-3 text-gray-600">
                 <p>
@@ -69,7 +74,12 @@ const Index = () => {
                 </p>
               </div>
             </div>
-            <div className="flex justify-center w-1/3">
+            <div
+              className="flex justify-center w-1/3"
+              data-aos="zoom-in"
+              data-aos-once="true"
+              data-aos-duration="2000"
+            >
               <Image
                 src="/images/nisan-chhap.webp"
                 priority={true}

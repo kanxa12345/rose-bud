@@ -16,7 +16,6 @@ const Index = () => {
     (item) => item.jobTitle === jobTitle && item.country === country
   );
 
-
   const openModal = () => {
     setModalIsOpen(true);
     document.body.classList.add("overflow-hidden");
@@ -56,7 +55,12 @@ const Index = () => {
       <section className="py-20">
         {data && (
           <div className="container flex gap-8">
-            <div className="w-2/3 flex flex-col items-start gap-2">
+            <div
+              className="w-2/3 flex flex-col items-start gap-2"
+              data-aos="fade-right"
+              data-aos-once="true"
+              data-aos-duration="2000"
+            >
               <small className="text-base font-medium text-gray-500">
                 {country}
               </small>
@@ -72,7 +76,9 @@ const Index = () => {
                   {data.jobType}
                 </p>
                 <p className="text-brand1 text-lg font-medium">
-                  <span className="text-black me-[2px]">Min. Qualification:</span>
+                  <span className="text-black me-[2px]">
+                    Min. Qualification:
+                  </span>
                   {data.minQualification}
                 </p>
                 <p className="text-brand1 text-lg font-medium">
@@ -87,7 +93,12 @@ const Index = () => {
                 Apply Now
               </button>
             </div>
-            <div className="w-1/3">
+            <div
+              className="w-1/3"
+              data-aos="zoom-in"
+              data-aos-once="true"
+              data-aos-duration="2000"
+            >
               <Image
                 src={data.imageUrl}
                 priority={true}

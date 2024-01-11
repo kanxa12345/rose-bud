@@ -28,7 +28,7 @@ const WhyUs = () => {
                 </div>
             ))}
         </div>
-        <Link href="/whyUs" className="text-white border border-blue-950 bg-blue-950 hover:text-blue-950 hover:bg-white px-2 py-1 cursor-pointer transition-all duration-200 ease-linear">View Details</Link>
+        <Link href="/whyUs" className="text-white border border-blue-950 hover:border-white bg-blue-950 hover:bg-opacity-10 hover:bg-white px-2 py-1 cursor-pointer transition-all duration-200 ease-linear">View Details</Link>
       </div>
     </section>
   );

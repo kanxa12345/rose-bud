@@ -33,9 +33,6 @@ const index = () => {
                 <video
                   controls
                   className="w-full h-[200px]"
-                  data-aos="zoom-in"
-                  data-aos-duration="1000"
-                  data-aos-once="true"
                 >
                   <source
                     className="inline-block w-full h-full"

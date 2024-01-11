@@ -12,14 +12,14 @@ const Country = () => {
         </h2>
         <div className="grid grid-cols-3 gap-10 w-[70%] mx-auto">
           {CountryData.slice(0, 6).map((item, id) => (
-            <div key={id} className="w-full h-full relative">
+            <div key={id} className="w-full h-full rounded-full relative group overflow-hidden">
               <Image
                 src={item.image}
                 priority={true}
                 height={2000}
                 width={2000}
                 alt={item.country}
-                className="w-full h-full aspect-square object-cover rounded-full"
+                className="w-full h-full aspect-square object-cover rounded-full group-hover:scale-110 transition-all duration-200 ease-linear"
               />
               <div className="absolute w-full h-full inset-0 bg-gradient-to-t from-black to-transparent rounded-full opacity-70"></div>
               <h3 className="text-xl font-medium w-full text-center left-0 bottom-4 z-10 text-white absolute">

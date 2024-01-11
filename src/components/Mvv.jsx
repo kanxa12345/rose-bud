@@ -20,7 +20,9 @@ const Mvv = () => {
             <div
               key={id}
               className="flex flex-col items-center gap-2 p-5 rounded text-white border border-gray-500 bg-brand2 bg-opacity-10"
-              data-aos="zoom-out" data-aos-once="true" data-aos-duration="2000"
+              data-aos="zoom-out"
+              data-aos-once="true"
+              data-aos-duration="2000"
             >
               <Image
                 src={item.icon}

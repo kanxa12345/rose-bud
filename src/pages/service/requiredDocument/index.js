@@ -22,7 +22,9 @@ const Index = () => {
           <h2 className="text-2xl font-medium">
             <span className="text-brand1">Required</span> Documents
           </h2>
-          <div className="w-full grid grid-cols-3 gap-6">
+          <div className="w-full grid grid-cols-3 gap-6"  data-aos="zoom-out"
+              data-aos-once="true"
+              data-aos-duration="2000">
             <div className="flex flex-col items-start gap-3 bg-brand2 bg-opacity-10 p-4 rounded">
               <h3 className="text-xl font-medium">
                 For Qatar, Kuwait, Bahrain, Oman & UAE

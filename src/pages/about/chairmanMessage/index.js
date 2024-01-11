@@ -29,7 +29,12 @@ const Index = () => {
               <span className="h-1 w-1/5 bg-gradient-to-r from-red-400 to-gray-300"></span>
             </div>
           </div>
-          <div className="flex gap-8">
+          <div
+            className="flex gap-8"
+            data-aos="fade-up"
+            data-aos-once="true"
+            data-aos-duration="2000"
+          >
             <div className="flex flex-col gap-3 items-start  w-1/3">
               <Image
                 src="/images/chairman.jpg"

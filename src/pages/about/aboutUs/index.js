@@ -29,7 +29,12 @@ const Index = () => {
               <span className="h-1 w-1/5 bg-gradient-to-r from-red-400 to-gray-300"></span>
             </div>
           </div>
-          <div className="w-full flex flex-col gap-3 text-gray-600">
+          <div
+            className="w-full flex flex-col gap-3 text-gray-600"
+            data-aos="fade-right"
+            data-aos-once="true"
+            data-aos-duration="2000"
+          >
             <h3 className="text-4xl font-semibold text-black">
               <span className="text-brand1">RoseBud</span> Human Resource Pvt.
               Ltd.
@@ -69,7 +74,9 @@ const Index = () => {
           alt="image"
           className="h-[500px] w-1/2 object-cover"
         />
-        <div className="flex flex-col items-start gap-4 w-[37%]">
+        <div
+          className="flex flex-col items-start gap-4 w-[37%]"
+        >
           <h2 className="text-2xl font-medium text-brand1">Objective</h2>
           <div className="w-full">
             <p>
