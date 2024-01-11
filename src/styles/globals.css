@@ -16,3 +16,9 @@
 .element {
   clip-path: polygon(0 0, 50% 25%, 100% 0, 100% 75%, 50% 100%, 0 75%);
 }
+
+@media screen and (max-width: 1024px) {
+  .element {
+    clip-path: polygon(0 0, 50% 10%, 100% 0, 100% 85%, 50% 100%, 0 85%);
+  }
+}

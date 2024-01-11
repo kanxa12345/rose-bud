@@ -15,24 +15,30 @@ const Mvv = () => {
         }}
       >
         <div className="absolute w-full h-full inset-0 bg-gray-950 opacity-85"></div>
-        <div className="container grid grid-cols-3 gap-8 relative">
+        <div className="container flex sm:flex-row flex-col lg:flex-nowrap sm:flex-wrap justify-center relative">
           {MvvData.map((item, id) => (
             <div
               key={id}
-              className="flex flex-col items-center gap-2 p-5 rounded text-white border border-gray-500 bg-brand2 bg-opacity-10"
-              data-aos="zoom-out"
-              data-aos-once="true"
-              data-aos-duration="2000"
+              className="lg:w-1/3 sm:w-1/2 w-full p-4"
+              
             >
-              <Image
-                src={item.icon}
-                priority={true}
-                width={2000}
-                height={2000}
-                className="w-16 h-16"
-              />
-              <h3 className="text-xl font-bold text-brand1">{item.title}</h3>
-              <p className="text-center">{item.description}</p>
+              <div className=" flex flex-col items-center gap-2 sm:p-5 p-3 rounded text-white border border-gray-500 bg-brand2 bg-opacity-10" data-aos="zoom-out"
+              data-aos-once="true"
+              data-aos-duration="2000">
+                <Image
+                  src={item.icon}
+                  priority={true}
+                  width={2000}
+                  height={2000}
+                  className="sm:w-16 w-12 sm:h-16 h-12"
+                />
+                <h3 className="sm:text-xl text-lg font-bold text-brand1">
+                  {item.title}
+                </h3>
+                <p className="text-center 2xl:text-base text-sm">
+                  {item.description}
+                </p>
+              </div>
             </div>
           ))}
         </div>
