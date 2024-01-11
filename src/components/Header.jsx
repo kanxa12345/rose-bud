@@ -2,6 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { useRouter } from "next/router";
 import React, { useEffect, useState } from "react";
+import { GiHamburgerMenu } from "react-icons/gi";
 
 const Header = () => {
   const [scrolled, setScrolled] = useState(false);
@@ -9,6 +10,7 @@ const Header = () => {
   const [serviceMenu, setServiceMenu] = useState(false);
   const [galleryMenu, setGalleryMenu] = useState(false);
   const [activeBlock, setActiveBlock] = useState(0);
+  const [nav, setNav] = useState(false)
 
   const handleScroll = () => {
     const scrollTop = window.scrollY;
@@ -54,7 +56,7 @@ const Header = () => {
 
   return (
     <header
-      className={`fixed w-full z-50 transition-all duration-500 ease-linear ${
+      className={`fixed w-full z-50 transition-all duration-500 ease-linear lg:py-0 py-1 ${
         scrolled ? "bg-white text-black shadow-md" : "bg-transparent text-white"
       }`}
     >
@@ -66,14 +68,19 @@ const Header = () => {
             width={2000}
             height={2000}
             alt="logo"
-            className="w-[100px]"
+            className="lg:w-[100px] w-[70px]"
           />
         </Link>
-        <nav>
+        <span onClick={()=> setNav(!nav)} className="lg:hidden text-xl">
+          <GiHamburgerMenu />
+        </span>
+        <nav className={`lg:block ${nav ? 'block' : 'hidden'}`}>
           <ul className="flex items-center gap-8 font-medium">
             <li
               onClick={() => handleButtonClick(0)}
-              className={`${activeBlock === 0 ? "text-brand1" : ""} hover:text-brand1`}
+              className={`${
+                activeBlock === 0 ? "text-brand1" : ""
+              } hover:text-brand1`}
             >
               <Link href="/">Home</Link>
             </li>
@@ -95,11 +102,36 @@ const Header = () => {
                   aboutMenu ? "top-[89px] opacity-100" : "top-24 opacity-0"
                 }`}
               >
-                <Link href="/about/aboutUs" className="py-1 px-2 hover:bg-brand1">About Us</Link>
-                <Link href="/about/chairmanMessage" className="py-1 px-2 hover:bg-brand1">Message From Chairman</Link>
-                <Link href="/about/ourTeam" className="py-1 px-2 hover:bg-brand1">Our Team</Link>
-                <Link href="/about/legalDocument" className="py-1 px-2 hover:bg-brand1">Legal Documents</Link>
-                <Link href="/about/aboutNepal" className="py-1 px-2 hover:bg-brand1">About Nepal</Link>
+                <Link
+                  href="/about/aboutUs"
+                  className="py-1 px-2 hover:bg-brand1"
+                >
+                  About Us
+                </Link>
+                <Link
+                  href="/about/chairmanMessage"
+                  className="py-1 px-2 hover:bg-brand1"
+                >
+                  Message From Chairman
+                </Link>
+                <Link
+                  href="/about/ourTeam"
+                  className="py-1 px-2 hover:bg-brand1"
+                >
+                  Our Team
+                </Link>
+                <Link
+                  href="/about/legalDocument"
+                  className="py-1 px-2 hover:bg-brand1"
+                >
+                  Legal Documents
+                </Link>
+                <Link
+                  href="/about/aboutNepal"
+                  className="py-1 px-2 hover:bg-brand1"
+                >
+                  About Nepal
+                </Link>
               </div>
             </li>
             <li
@@ -120,21 +152,33 @@ const Header = () => {
                   serviceMenu ? "top-[89px] opacity-100" : "top-24 opacity-0"
                 }`}
               >
-                <Link href="/service/requiredDocument" className="py-1 px-2 hover:bg-brand1">Required Documents</Link>
-                <Link href="/service/recruitmentProcess" className="py-1 px-2 hover:bg-brand1">
+                <Link
+                  href="/service/requiredDocument"
+                  className="py-1 px-2 hover:bg-brand1"
+                >
+                  Required Documents
+                </Link>
+                <Link
+                  href="/service/recruitmentProcess"
+                  className="py-1 px-2 hover:bg-brand1"
+                >
                   Recruitment Process
                 </Link>
               </div>
             </li>
             <li
               onClick={() => handleButtonClick(3)}
-              className={`${activeBlock === 3 ? "text-brand1" : ""} hover:text-brand1`}
+              className={`${
+                activeBlock === 3 ? "text-brand1" : ""
+              } hover:text-brand1`}
             >
               <Link href="/jobSector">Job Sectors</Link>
             </li>
             <li
               onClick={() => handleButtonClick(4)}
-              className={`${activeBlock === 4 ? "text-brand1" : ""} hover:text-brand1`}
+              className={`${
+                activeBlock === 4 ? "text-brand1" : ""
+              } hover:text-brand1`}
             >
               <Link href="/demand">Current Demand</Link>
             </li>
@@ -156,13 +200,25 @@ const Header = () => {
                   galleryMenu ? "top-[89px] opacity-100" : "top-24 opacity-0"
                 }`}
               >
-                <Link href="/gallery/imageGallery" className="py-1 px-2 hover:bg-brand1">Image Gallery</Link>
-                <Link href="/gallery/videoGallery" className="py-1 px-2 hover:bg-brand1">Video Gallery</Link>
+                <Link
+                  href="/gallery/imageGallery"
+                  className="py-1 px-2 hover:bg-brand1"
+                >
+                  Image Gallery
+                </Link>
+                <Link
+                  href="/gallery/videoGallery"
+                  className="py-1 px-2 hover:bg-brand1"
+                >
+                  Video Gallery
+                </Link>
               </div>
             </li>
             <li
               onClick={() => handleButtonClick(6)}
-              className={`${activeBlock === 6 ? "text-brand1" : ""} hover:text-brand1`}
+              className={`${
+                activeBlock === 6 ? "text-brand1" : ""
+              } hover:text-brand1`}
             >
               <Link href="/contact">Contact</Link>
             </li>
