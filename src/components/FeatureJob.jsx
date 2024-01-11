@@ -21,9 +21,9 @@ const FeatureJob = () => {
     }
   });
   return (
-    <section className="pt-20 pb-10 bg-gray-100">
+    <section className="md:pt-20 pt-16 pb-10 bg-gray-100">
       <div className="container flex flex-col items-center gap-6">
-        <h2 className="text-2xl font-medium">
+        <h2 className="sm:text-2xl text-xl font-medium">
           <span className="text-brand1">Featured</span> Jobs
         </h2>
         <div className="w-full">
@@ -34,7 +34,7 @@ const FeatureJob = () => {
             loop={true}
             centeredSlides={true}
             autoplay={{ delay: 3000 }}
-            slidesPerView={3}
+            slidesPerView={1}
             style={{
               "--swiper-pagination-bullet-size": "7px",
               "--swiper-pagination-bullet-inactive-color": "#fff",
@@ -42,11 +42,14 @@ const FeatureJob = () => {
               "--swiper-pagination-bullet-inactive-opacity": "0.7",
             }}
             breakpoints={{
+              400: {
+                slidesPerView: 2,
+              },
               768: {
-                slidesPerView: 4,
+                slidesPerView: 3,
               },
               1024: {
-                slidesPerView: 4,
+                slidesPerView: 3,
               },
               1280: {
                 slidesPerView: 4,
@@ -65,10 +68,10 @@ const FeatureJob = () => {
                     height={2000}
                     width={2000}
                     alt={jobItem.jobTitle}
-                    className="w-full h-64 object-cover"
+                    className="w-full sm:h-64 h-40 object-cover"
                   />
                   <div className="absolute w-full h-full inset-0 bg-gradient-to-t from-black to-transparent opacity-80"></div>
-                  <h3 className="text-xl font-medium absolute w-full text-center left-0 bottom-4 z-10 text-white">
+                  <h3 className="sm:text-xl text-lg font-medium absolute w-full text-center left-0 bottom-4 z-10 text-white">
                     {jobItem.jobTitle}
                   </h3>
                 </Link>
@@ -78,7 +81,7 @@ const FeatureJob = () => {
         </div>
         <Link
           href="/jobSector"
-          className="font-medium text-white border border-blue-950 bg-blue-950 hover:text-blue-950 hover:bg-white px-2 py-1 cursor-pointer transition-all duration-200 ease-linear"
+          className="font-medium sm:text-base text-sm text-white border border-blue-950 bg-blue-950 hover:text-blue-950 hover:bg-white px-2 py-1 cursor-pointer transition-all duration-200 ease-linear"
         >
           View All Jobs
         </Link>
