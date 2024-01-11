@@ -26,7 +26,7 @@ const Footer = () => {
               width={2000}
               height={2000}
               alt="logo"
-              className="w-32"
+              className="w-36"
             />
           </div>
           <div className="flex flex-col gap-3 items-start">
@@ -41,7 +41,7 @@ const Footer = () => {
                 <span className="w-[15px] h-[15px] rounded-full bg-brand1 flex justify-center items-center text-xs">
                   <FaAngleRight />
                 </span>
-                <p className="inline-block text-sm group-hover:text-red-500">
+                <p className="inline-block text-base group-hover:text-red-500">
                   About
                 </p>
               </Link>
@@ -52,7 +52,7 @@ const Footer = () => {
                 <span className="w-[15px] h-[15px] rounded-full bg-brand1 flex justify-center items-center text-xs">
                   <FaAngleRight />
                 </span>
-                <p className="inline-block text-sm group-hover:text-red-500">
+                <p className="inline-block text-base group-hover:text-red-500">
                   Services
                 </p>
               </Link>
@@ -63,7 +63,7 @@ const Footer = () => {
                 <span className="w-[15px] h-[15px] rounded-full bg-brand1 flex justify-center items-center text-xs">
                   <FaAngleRight />
                 </span>
-                <p className="inline-block text-sm group-hover:text-red-500">
+                <p className="inline-block text-base group-hover:text-red-500">
                   Job Sectors
                 </p>
               </Link>
@@ -74,7 +74,7 @@ const Footer = () => {
                 <span className="w-[15px] h-[15px] rounded-full bg-brand1 flex justify-center items-center text-xs">
                   <FaAngleRight />
                 </span>
-                <p className="inline-block text-sm group-hover:text-red-500">
+                <p className="inline-block text-base group-hover:text-red-500">
                   Current Demand
                 </p>
               </Link>
@@ -85,7 +85,7 @@ const Footer = () => {
                 <span className="w-[15px] h-[15px] rounded-full bg-brand1 flex justify-center items-center text-xs">
                   <FaAngleRight />
                 </span>
-                <p className="inline-block text-sm group-hover:text-red-500">
+                <p className="inline-block text-base group-hover:text-red-500">
                   Gallery
                 </p>
               </Link>
@@ -96,7 +96,7 @@ const Footer = () => {
                 <span className="w-[15px] h-[15px] rounded-full bg-brand1 flex justify-center items-center text-xs">
                   <FaAngleRight />
                 </span>
-                <p className="inline-block text-sm group-hover:text-red-500">
+                <p className="inline-block text-base group-hover:text-red-500">
                   Contact
                 </p>
               </Link>
@@ -114,7 +114,7 @@ const Footer = () => {
                 className="flex items-center gap-1 text-xs text-brand1"
               >
                 <FaMapMarkerAlt />
-                <p className="text-sm text-gray-100 hover:underline">
+                <p className="text-base text-gray-100 hover:underline">
                   Bansbari, Kathmandu
                 </p>
               </a>
@@ -123,7 +123,7 @@ const Footer = () => {
                 className="flex items-center gap-1 text-xs text-brand1"
               >
                 <IoIosCall />
-                <p className="text-sm text-gray-100 hover:underline">
+                <p className="text-base text-gray-100 hover:underline">
                   +977-1-4373508
                 </p>
               </a>
@@ -132,7 +132,7 @@ const Footer = () => {
                 className="flex items-center gap-1 text-xs text-brand1"
               >
                 <MdEmail />
-                <p className="text-sm text-gray-100 hover:underline">
+                <p className="text-base text-gray-100 hover:underline">
                   info@caldrongraphics.com.np
                 </p>
               </a>
@@ -142,7 +142,7 @@ const Footer = () => {
             <h3 className="text-xl font-medium border-b-2 border-red-600">
               Keep In Touch
             </h3>
-            <p className="text-sm">Don’t hestiate to ask us something, Our customer support team always ready to help you,they will support you 24/7.</p>
+            <p >Don&apos;t hestiate to ask us something, Our customer support team always ready to help you,they will support you 24/7.</p>
             <div className="flex items-center gap-3">
               <a
                 href="#"

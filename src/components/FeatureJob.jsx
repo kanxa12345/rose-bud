@@ -21,7 +21,7 @@ const FeatureJob = () => {
     }
   });
   return (
-    <section className="py-20 bg-gray-100">
+    <section className="pt-20 pb-10 bg-gray-100">
       <div className="container flex flex-col items-center gap-6">
         <h2 className="text-2xl font-medium">
           <span className="text-brand1">Featured</span> Jobs

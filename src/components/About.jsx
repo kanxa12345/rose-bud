@@ -32,7 +32,7 @@ const About = () => {
             className="absolute w-full h-full left-0 top-16"
           />
         </div>
-        <div className="w-2/3 flex flex-col items-start gap-4">
+        <div className="w-2/3 flex flex-col items-start gap-4" data-aos="fade-up" data-aos-once="true" data-aos-duration="2000">
           <h2 className="text-4xl font-semibold">
             <span className="text-brand1">RoseBud</span> Human Resource Pvt.
             Ltd.

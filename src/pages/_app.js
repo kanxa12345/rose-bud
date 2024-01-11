@@ -1,8 +1,15 @@
-import Layout from "@/components/Layout";
 import "@/styles/globals.css";
+import AOS from "aos";
+import "aos/dist/aos.css";
 import Head from "next/head";
+import Layout from "@/components/Layout";
+import { useEffect } from "react";
 
 export default function App({ Component, pageProps }) {
+  useEffect(() => {
+    AOS.init({
+    });
+  }, []);
   return (
     <>
       <Head>

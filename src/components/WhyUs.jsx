@@ -21,7 +21,7 @@ const WhyUs = () => {
         </h2>
         <div className="w-full grid grid-cols-4 gap-6">
             {WhyUsData.map((item, id)=>(
-                <div key={id} className="flex flex-col items-center gap-2 bg-brand1 bg-opacity-90 px-4 py-14 text-black rounded">
+                <div key={id} className="flex flex-col items-center gap-2 bg-brand1 bg-opacity-90 px-4 py-14 text-black rounded" data-aos="zoom-in" data-aos-once="true" data-aos-duration="2000">
                     <Image src={item.iconImage} priority={true} height={2000} width={2000} alt={item.title} className="h-16 w-auto" />
                     <h3 className="text-xl font-bold text-white">{item.title.toUpperCase()}</h3>
                     <p className="text-center text-gray-200">{item.description.substring(0,100)}</p>
