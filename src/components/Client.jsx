@@ -27,16 +27,16 @@ const Client = () => {
   });
 
   return (
-    <section className="py-20 bg-gradient-to-r from-brand1 to-blue-950 text-white">
+    <section className="md:py-20 py-16 bg-gradient-to-r from-brand1 to-blue-950 text-white">
       <div className="container flex flex-col items-center gap-8">
-        <h2 className="text-2xl font-medium">Our Clients</h2>
+        <h2 className="sm:text-2xl text-xl font-medium">Our Clients</h2>
         <div className="w-full flex flex-col gap-2 items-center">
-          <div className="w-full flex justify-center gap-2 border-b pb-2">
+          <div className="w-full flex flex-wrap justify-center gap-2 border-b pb-2">
             {Object.values(clientFolder).map((item, id) => (
               <button
                 key={id}
                 onClick={() => handleCountry(id)}
-                className={`px-2 py-[2px] text-sm rounded-sm ${activeCountry === id ? 'bg-blue-950 text-white': ''}`}
+                className={`px-2 py-[2px] sm:text-sm text-xs rounded-sm ${activeCountry === id ? 'bg-blue-950 text-white': ''}`}
               >
                 {item.country}
               </button>
@@ -46,7 +46,7 @@ const Client = () => {
             <Swiper
               centeredSlidesBounds={true}
               modules={[Pagination, A11y, Autoplay]}
-              spaceBetween={50}
+              spaceBetween={20}
               loop={true}
               centeredSlides={true}
               autoplay={{ delay: 3000 }}
@@ -86,7 +86,7 @@ const Client = () => {
                             width={2000}
                             priority={true}
                             className="md:h-[90px] h-[40px] w-full bg-white p-1 object-contain"
-                            alt="client-image"
+                            alt={`client image${index}`}
                           />
                         </SwiperSlide>
                       ))}
