@@ -175,6 +175,15 @@ const Header = () => {
                   onClick={() => {
                     setNav(false), setAboutMenu(false);
                   }}
+                  href="/about/mdMessage"
+                  className="py-1 px-2 lg:hover:bg-brand1 block w-full"
+                >
+                  Message From MD
+                </Link>
+                <Link
+                  onClick={() => {
+                    setNav(false), setAboutMenu(false);
+                  }}
                   href="/about/ourTeam"
                   className="py-1 px-2 lg:hover:bg-brand1 block w-full"
                 >
