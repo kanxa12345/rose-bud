@@ -6,21 +6,21 @@ import Image from "next/image";
 const index = () => {
   const ShowTeam = ({ data }) => {
     return (
-      <div class="p-4">
-        <div class="h-full flex flex-col items-center text-center">
+      <div className="p-4">
+        <div className="h-full flex flex-col items-center text-center">
           <Image
             priority={true}
             width={2000}
             height={2000}
             alt={data.name}
-            class="h-40 w-40 rounded-full object-cover object-center mb-4"
+            className="h-40 w-40 rounded-full object-cover object-center mb-4"
             src={data.image}
           />
-          <div class="w-full">
-            <h3 class="title-font font-medium text-xl text-gray-900">
+          <div className="w-full">
+            <h3 className="title-font font-medium text-xl text-gray-900">
               {data.name}
             </h3>
-            <p class="text-brand1 text-lg font-medium">{data.post}</p>
+            <p className="text-brand1 text-lg font-medium">{data.post}</p>
           </div>
         </div>
       </div>

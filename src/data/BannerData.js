@@ -24,6 +24,11 @@ const data = [
         imageUrl: '/images/banner-images/uae.webp',
         slogan: 'Beyond Recruitment, Building Futures'
     },
+    {
+        id: 6,
+        imageUrl: '/images/banner-images/poland.webp',
+        slogan: 'Building Careers, Connecting Talent'
+    },
 ]
 
 export default data;

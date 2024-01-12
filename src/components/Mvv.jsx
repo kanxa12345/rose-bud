@@ -31,6 +31,7 @@ const Mvv = () => {
                   width={2000}
                   height={2000}
                   className="sm:w-16 w-12 sm:h-16 h-12"
+                  alt={item.title}
                 />
                 <h3 className="sm:text-xl text-lg font-bold text-brand1">
                   {item.title}
