@@ -18,21 +18,24 @@ const Index = () => {
           </ul>
         </div>
       </section>
-      <section className="py-20">
+      <section className="md:py-20 py-16">
         <div className="container flex flex-col items-center gap-14">
           <div className="w-full flex flex-col items-center gap-1">
-            <h2 className="text-2xl font-medium text-black text-center">
+            <h2 className="sm:text-2xl text-xl font-medium text-black text-center">
               Recruitment Process
             </h2>
             <div className="flex items-center gap-4 w-full justify-center">
-              <span className="h-1 w-1/5 bg-gradient-to-r from-gray-300 to-red-400"></span>
+              <span className="h-1 sm:w-1/5 w-1/4 bg-gradient-to-r from-gray-300 to-red-400"></span>
               <span className="inline-block w-2 h-2 bg-brand1 rotate-45"></span>
-              <span className="h-1 w-1/5 bg-gradient-to-r from-red-400 to-gray-300"></span>
+              <span className="h-1 sm:w-1/5 w-1/4 bg-gradient-to-r from-red-400 to-gray-300"></span>
             </div>
           </div>
-          <div className="w-full"  data-aos="zoom-in"
-              data-aos-once="true"
-              data-aos-duration="2000">
+          <div
+            className="w-full"
+            data-aos="zoom-in"
+            data-aos-once="true"
+            data-aos-duration="2000"
+          >
             <Image
               src="/images/recruitment-process.jpg"
               priority={true}
@@ -44,14 +47,17 @@ const Index = () => {
           </div>
         </div>
       </section>
-      <section className="py-20 bg-gray-100">
-        <div className="container flex flex-col items-start gap-4"  data-aos="fade-right"
-              data-aos-once="true"
-              data-aos-duration="2000">
-          <h2 className="text-2xl font-semibold">
+      <section className="md:py-20 py-16 bg-gray-100">
+        <div
+          className="container flex flex-col items-start gap-4"
+          data-aos="fade-right"
+          data-aos-once="true"
+          data-aos-duration="2000"
+        >
+          <h2 className="sm:text-2xl text-xl font-medium">
             Developing Foolproof Recruitment Process
           </h2>
-          <div className="w-full flex flex-col flex-start gap-3 text-gray-700">
+          <div className="w-full flex flex-col flex-start gap-3 text-gray-700 sm:text-base text-sm">
             <p>
               The recruitment process may vary from company to company based on
               the organizational structure, selection process, nature of
@@ -68,35 +74,35 @@ const Index = () => {
               <ul className="flex flex-col gap-1">
                 <li className="flex items-center gap-1 text-sm">
                   <FaAngleRight />
-                  <p className="text-base">
+                  <p className="sm:text-base">
                     Identify the hiring needs (Employer Requirements)
                   </p>
                 </li>
                 <li className="flex items-center gap-1 text-sm">
                   <FaAngleRight />
-                  <p className="text-base">
+                  <p className="sm:text-base">
                     Prepare job descriptions (By Employer or Agency)
                   </p>
                 </li>
                 <li className="flex items-center gap-1 text-sm">
                   <FaAngleRight />
-                  <p className="text-base">Devise recruitment strategy</p>
+                  <p className="sm:text-base">Devise recruitment strategy</p>
                 </li>
                 <li className="flex items-center gap-1 text-sm">
                   <FaAngleRight />
-                  <p className="text-base">Screen and shortlist candidates</p>
+                  <p className="sm:text-base">Screen and shortlist candidates</p>
                 </li>
                 <li className="flex items-center gap-1 text-sm">
                   <FaAngleRight />
-                  <p className="text-base">Conduct interviews</p>
+                  <p className="sm:text-base">Conduct interviews</p>
                 </li>
                 <li className="flex items-center gap-1 text-sm">
                   <FaAngleRight />
-                  <p className="text-base">Evaluate and make the offer</p>
+                  <p className="sm:text-base">Evaluate and make the offer</p>
                 </li>
                 <li className="flex items-center gap-1 text-sm">
                   <FaAngleRight />
-                  <p className="text-base">Onboard the new employee</p>
+                  <p className="sm:text-base">Onboard the new employee</p>
                 </li>
               </ul>
             </div>

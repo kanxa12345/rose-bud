@@ -17,19 +17,19 @@ const Index = () => {
           </ul>
         </div>
       </section>
-      <section className="py-20 bg-gray-100">
+      <section className="md:py-20 py-16 bg-gray-100">
         <div className="container flex flex-col items-center gap-6">
-          <h2 className="text-2xl font-medium">
+          <h2 className="sm:text-2xl text-xl font-medium">
             <span className="text-brand1">Required</span> Documents
           </h2>
-          <div className="w-full grid grid-cols-3 gap-6"  data-aos="zoom-out"
+          <div className="w-full grid lg:grid-cols-3 md:grid-cols-2 md:gap-6 gap-4"  data-aos="zoom-out"
               data-aos-once="true"
               data-aos-duration="2000">
             <div className="flex flex-col items-start gap-3 bg-brand2 bg-opacity-10 p-4 rounded">
-              <h3 className="text-xl font-medium">
+              <h3 className="sm:text-xl text-lg font-medium">
                 For Qatar, Kuwait, Bahrain, Oman & UAE
               </h3>
-              <ul className="flex flex-col items-start gap-1 text-gray-700">
+              <ul className="flex flex-col items-start gap-1 text-gray-700 sm:text-base text-sm">
                 <li className="flex items-center gap-2">
                   <span className="text-xs">
                     <FaArrowRightLong />
@@ -64,7 +64,7 @@ const Index = () => {
             </div>
             <div className="flex flex-col items-start gap-3 bg-brand2 bg-opacity-10 p-4 rounded">
               <h3 className="text-xl font-medium">For Malaysia</h3>
-              <ul className="flex flex-col items-start gap-1 text-gray-700">
+              <ul className="flex flex-col items-start gap-1 text-gray-700 sm:text-base text-sm">
                 <li className="flex items-center gap-2">
                   <span className="text-xs">
                     <FaArrowRightLong />
@@ -130,7 +130,7 @@ const Index = () => {
             </div>
             <div className="flex flex-col items-start gap-3 bg-brand2 bg-opacity-10 p-4 rounded">
               <h3 className="text-xl font-medium">For Saudi Arabia</h3>
-              <ul className="flex flex-col items-start gap-1 text-gray-700">
+              <ul className="flex flex-col items-start gap-1 text-gray-700 sm:text-base text-sm">
                 <li className="flex items-center gap-2">
                   <span className="text-xs">
                     <FaArrowRightLong />
