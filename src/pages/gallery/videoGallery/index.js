@@ -24,15 +24,15 @@ const index = () => {
           </ul>
         </div>
       </section>
-      <section className="py-20">
+      <section className="md:py-20 py-16 bg-gray-50">
         <div className="container flex flex-col items-center gap-6">
-          <h2 className="text-2xl font-medium"><span className="text-brand1">Video</span> Gallery</h2>
-          <div className="w-full grid grid-cols-4 gap-6">
+          <h2 className="sm:text-2xl text-xl font-medium"><span className="text-brand1">Video</span> Gallery</h2>
+          <div className="w-full grid xl:grid-cols-4 md:grid-cols-3 grid-cols-2 gap-6">
             {VideoData.map((videoItem, id) => (
               <div key={id} className="w-full">
                 <video
                   controls
-                  className="w-full h-[200px]"
+                  className="w-full sm:h-[200px]"
                 >
                   <source
                     className="inline-block w-full h-full"

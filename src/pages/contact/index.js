@@ -39,24 +39,24 @@ const Index = () => {
           </ul>
         </div>
       </section>
-      <section className="py-20 bg-gray-100">
+      <section className="md:py-20 py-16 bg-gray-100">
         <div className="container flex flex-col items-center gap-6">
-          <h2 className="text-2xl font-medium">
+          <h2 className="sm:text-2xl text-xl font-medium">
             <span className="text-brand1">Contact</span> us
           </h2>
           <div
-            className="w-1/2 flex flex-col gap-12"
+            className="xl:w-1/2 sm:w-4/5 w-full flex flex-col gap-12"
             data-aos="fade-up"
             data-aos-once="true"
             data-aos-duration="2000"
           >
-            <div className="grid grid-cols-3 w-full gap-6">
+            <div className="grid md:grid-cols-3 sm:grid-cols-2 w-full gap-6">
               <div className="flex items-center gap-2">
                 <span className="text-white p-[6px] bg-black text-sm">
                   <FaMapMarkerAlt />
                 </span>
                 <span>
-                  <p className="md:text-lg text-base font-medium">Location</p>
+                  <p className="sm:text-lg text-base font-medium">Location</p>
                   <p className="text-gray-700 text-sm">Sinamangal-9, Kathmandu, Nepal</p>
                 </span>
               </div>
@@ -65,7 +65,7 @@ const Index = () => {
                   <IoIosCall />
                 </span>
                 <span>
-                  <p className="md:text-lg text-base font-medium">Contact</p>
+                  <p className="sm:text-lg text-base font-medium">Contact</p>
                   <p className="text-gray-700 text-sm">+977-1-4597366</p>
                 </span>
               </div>
@@ -74,7 +74,7 @@ const Index = () => {
                   <MdEmail />
                 </span>
                 <span>
-                  <p className="md:text-lg text-base font-medium">Email</p>
+                  <p className="sm:text-lg text-base font-medium">Email</p>
                   <p className="text-gray-700 text-sm">
                     rosebudhumanresource@gmail.com, info@rosebudhr.com
                   </p>
@@ -82,13 +82,13 @@ const Index = () => {
               </div>
             </div>
             <div className="flex flex-col items-start gap-4 px-5 py-6 shadow-[0_0_5px_1px_rgba(0,0,0,0.1)] rounded-md bg-white w-full">
-              <h3 className="md:text-xl text-lg font-medium">Send Feedback</h3>
+              <h3 className="sm:text-xl text-lg font-medium">Send Feedback</h3>
               <form
                 onSubmit={handleSubmit}
                 className="flex flex-col items-center gap-2 w-full sm:text-base text-sm"
               >
-                <div className="flex sm:flex-row flex-col sm:gap-5 gap-2 w-full">
-                  <div className="flex flex-col items-start sm:w-1/2 w-full">
+                <div className="flex flex-row sm:gap-5 gap-2 w-full">
+                  <div className="flex flex-col items-start w-1/2">
                     <label htmlFor="name">Name</label>
                     <input
                       type="text"
@@ -100,7 +100,7 @@ const Index = () => {
                       className="border border-gray-500 p-1 rounded w-full text-gray-600 focus:outline-none bg-gray-50"
                     />
                   </div>
-                  <div className="flex flex-col items-start sm:w-1/2 w-full">
+                  <div className="flex flex-col items-start w-1/2">
                     <label htmlFor="mobile">Phone</label>
                     <input
                       type="tel"
@@ -113,8 +113,8 @@ const Index = () => {
                     />
                   </div>
                 </div>
-                <div className="flex sm:flex-row flex-col sm:gap-5 gap-2 w-full">
-                  <div className="flex flex-col items-start sm:w-1/2 w-full">
+                <div className="flex flex-row sm:gap-5 gap-2 w-full">
+                  <div className="flex flex-col items-start w-1/2">
                     <label htmlFor="email">Email</label>
                     <input
                       type="email"
@@ -126,7 +126,7 @@ const Index = () => {
                       className="border border-gray-500 p-1 rounded w-full text-gray-600 focus:outline-none bg-gray-50"
                     />
                   </div>
-                  <div className="flex flex-col items-start sm:w-1/2 w-full">
+                  <div className="flex flex-col items-start w-1/2">
                     <label htmlFor="subject">Subject</label>
                     <input
                       type="text"
@@ -160,7 +160,7 @@ const Index = () => {
           </div>
         </div>
       </section>
-      <section className="w-full md:h-[350px] h-[250px] my-4">
+      <section className="w-full md:h-[350px] sm:h-[250px] h-[200px] my-4">
         <iframe
           className="w-full h-full"
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3531.0127797679606!2d85.3418824760729!3d27.74775182370712!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39eb194df9aa4eff%3A0xaf4b9c99b44bebb5!2sCaldron%20Graphics%20Nepal%2C%20Apex%20Nepal%20Pvt.%20Ltd.!5e0!3m2!1sen!2snp!4v1701583407834!5m2!1sen!2snp"
