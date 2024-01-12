@@ -1,33 +1,39 @@
 const data = [
   {
     id: 1,
-    name: "Name",
-    post: 'CEO',
-    image: '/images/team-image/img1.jpg'
+    name: "Jay Prakash Das",
+    post: 'Chairman',
+    image: '/images/team-image/jay.jpeg'
   },
   {
     id: 2,
-    name: "Name",
-    post: 'MD',
-    image: '/images/team-image/img1.jpg'
+    name: "Gopal Thakuri",
+    post: 'Managing Director',
+    image: '/images/team-image/gopal.jpeg'
   },
   {
     id: 3,
-    name: "Name",
-    post: 'Receptionist',
-    image: '/images/team-image/img1.jpg'
+    name: "Megh Bahadur Raut",
+    post: 'Executive Director',
+    image: '/images/team-image/megh.jpeg'
   },
   {
     id: 4,
-    name: "Name",
-    post: 'Accountant',
-    image: '/images/team-image/img1.jpg'
+    name: "Loknath Khanal",
+    post: 'Operation Director',
+    image: '/images/team-image/loknath.jpeg'
   },
   {
     id: 5,
-    name: "Name",
-    post: 'Developer',
-    image: '/images/team-image/img1.jpg'
+    name: "Nisha Adhikari",
+    post: 'Receptionist',
+    image: '/images/team-image/nisha.jpeg'
+  },
+  {
+    id: 6,
+    name: "Lhamu Sherpa",
+    post: 'Office Helper',
+    image: '/images/team-image/lhamu.jpeg'
   },
 ];
 

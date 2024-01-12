@@ -4,14 +4,11 @@ import ModalImage from "react-modal-image";
 
 const index = () => {
   const images = [
-    "/images/legal-documents/img1.jpg",
-    "/images/legal-documents/img2.jpg",
-    "/images/legal-documents/img3.jpg",
-    "/images/legal-documents/img4.jpg",
-    "/images/legal-documents/img5.jpg",
-    "/images/legal-documents/img6.jpg",
-    "/images/legal-documents/img7.jpg",
-    "/images/legal-documents/img8.jpg",
+    "/images/legal-documents/img1.jpeg",
+    "/images/legal-documents/img2.jpeg",
+    "/images/legal-documents/img3.jpeg",
+    "/images/legal-documents/img4.jpeg",
+    "/images/legal-documents/img5.jpeg",
   ];
   return (
     <>

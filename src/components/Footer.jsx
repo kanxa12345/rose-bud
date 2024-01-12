@@ -18,8 +18,8 @@ const Footer = () => {
   return (
     <footer className="bg-indigo-950 text-white">
       <div className="container">
-        <div className="grid lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 gap-8 pt-8 pb-6 xl:w-[80%] mx-auto">
-          <div className="flex flex-col items-start gap-5">
+        <div className="grid lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 gap-8 pt-8 pb-6 2xl:w-[80%] mx-auto">
+          <div className="flex flex-col items-start gap-3">
             <Image
               src="/images/logo.png"
               priority={true}
@@ -28,6 +28,7 @@ const Footer = () => {
               alt="logo"
               className="sm:w-36 w-32"
             />
+            <p className="sm:text-base text-sm">Govt. Lic. No.: 1665/080/081</p>
           </div>
           <div className="flex flex-col gap-3 items-start">
             <h3 className="sm:text-xl text-lg font-medium border-b-2 border-red-600">
@@ -115,25 +116,27 @@ const Footer = () => {
               >
                 <FaMapMarkerAlt />
                 <p className="sm:text-base text-sm text-gray-100 hover:underline">
-                  Bansbari, Kathmandu
+                  Sinamangal-9, Kathmandu, Nepal
                 </p>
               </a>
               <a
-                href="tel:+977-1-4373508"
+                href="tel:+977-1-4597366"
                 className="flex items-center gap-1 text-xs text-brand1"
               >
                 <IoIosCall />
                 <p className="sm:text-base text-sm text-gray-100 hover:underline">
-                  +977-1-4373508
+                  +977-1-4597366
                 </p>
               </a>
               <a
-                href="mailto:info@caldrongraphics.com.np"
+                href="mailto:rosebudhumanresource@gmail.com, info@rosebudhr.com"
                 className="flex items-center gap-1 text-xs text-brand1"
               >
-                <MdEmail />
-                <p className="sm:text-base text-sm text-gray-100 hover:underline">
-                  info@caldrongraphics.com.np
+                <span>
+                  <MdEmail />
+                </span>
+                <p className="xl:text-base text-sm text-gray-100 hover:underline">
+                  rosebudhumanresource@gmail.com, info@rosebudhr.com
                 </p>
               </a>
             </div>
@@ -142,7 +145,10 @@ const Footer = () => {
             <h3 className="sm:text-xl text-lg font-medium border-b-2 border-red-600">
               Keep In Touch
             </h3>
-            <p className="sm:text-base text-sm" >Don&apos;t hestiate to ask us something, Our customer support team always ready to help you,they will support you 24/7.</p>
+            <p className="sm:text-base text-sm">
+              Don&apos;t hestiate to ask us something, Our customer support team
+              always ready to help you,they will support you 24/7.
+            </p>
             <div className="flex items-center gap-3">
               <a
                 href="#"

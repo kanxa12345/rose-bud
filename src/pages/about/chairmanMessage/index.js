@@ -45,7 +45,7 @@ const Index = () => {
                 className="w-full h-96 object-cover"
               />
               <span>
-                <h3 className="text-2xl font-semibold">Name Surname</h3>
+                <h3 className="text-2xl font-semibold">Jay Prakash Das</h3>
                 <p className="text-lg font-medium text-brand1">Chairman</p>
               </span>
             </div>

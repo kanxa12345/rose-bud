@@ -33,10 +33,10 @@ const Index = () => {
           </ul>
         </div>
       </section>
-      <section className="py-20">
+      <section className="md:py-20 py-16 bg-gray-50">
         <div className="container flex flex-col items-center gap-6">
-          <h2 className="text-2xl font-medium"><span className="text-brand1">Image</span> Gallery</h2>
-          <div className="w-full grid grid-cols-5 gap-6">
+          <h2 className="sm:text-2xl text-xl font-medium"><span className="text-brand1">Image</span> Gallery</h2>
+          <div className="w-full grid xl:grid-cols-5 lg:grid-cols-4 md:grid-cols-3 grid-cols-2 gap-6">
             {groupedArray.map((dataItem, index) => (
               <div
                 key={index}
@@ -52,11 +52,11 @@ const Index = () => {
                     height={2000}
                     width={2000}
                     alt={dataItem.album}
-                    className="w-full h-[200px] object-cover group-hover:scale-110 transition-all duration-200 ease-linear"
+                    className="w-full sm:h-[200px] h-[130px] object-cover group-hover:scale-110 transition-all duration-200 ease-linear"
                   />
                 </Link>
-                <h3 className="border-b font-medium">{dataItem.album}</h3>
-                <p className="text-sm">{dataItem.images[0].date}</p>
+                <h3 className="border-b sm:text-base text-sm font-medium">{dataItem.album}</h3>
+                <p className="sm:text-sm text-xs">{dataItem.images[0].date}</p>
               </div>
             ))}
           </div>

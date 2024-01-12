@@ -13,7 +13,7 @@ const index = () => {
             width={2000}
             height={2000}
             alt={data.name}
-            className="h-40 w-40 rounded-full object-cover object-center mb-4"
+            className="h-44 w-44 rounded-full object-cover object-top mb-4"
             src={data.image}
           />
           <div className="w-full">
@@ -52,7 +52,7 @@ const index = () => {
               <span className="h-1 w-1/5 bg-gradient-to-r from-red-400 to-gray-300"></span>
             </div>
           </div>
-          <div className="w-2/3 flex flex-col items-center gap-6 bg-gray-100 p-2 rounded">
+          <div className="w-3/4 flex flex-col items-center gap-6 bg-gray-100 p-2 rounded">
             <div className="mx-auto">
               <ShowTeam data={TeamData[0]} />
             </div>

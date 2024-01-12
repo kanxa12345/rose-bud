@@ -57,7 +57,7 @@ const Index = () => {
                 </span>
                 <span>
                   <p className="md:text-lg text-base font-medium">Location</p>
-                  <p className="text-gray-700 text-sm">Bansbari, kathmandu</p>
+                  <p className="text-gray-700 text-sm">Sinamangal-9, Kathmandu, Nepal</p>
                 </span>
               </div>
               <div className="flex items-center gap-2">
@@ -66,7 +66,7 @@ const Index = () => {
                 </span>
                 <span>
                   <p className="md:text-lg text-base font-medium">Contact</p>
-                  <p className="text-gray-700 text-sm">+977-1-4373508</p>
+                  <p className="text-gray-700 text-sm">+977-1-4597366</p>
                 </span>
               </div>
               <div className="flex items-center gap-2">
@@ -76,7 +76,7 @@ const Index = () => {
                 <span>
                   <p className="md:text-lg text-base font-medium">Email</p>
                   <p className="text-gray-700 text-sm">
-                    info@caldrongraphics.com.np
+                    rosebudhumanresource@gmail.com, info@rosebudhr.com
                   </p>
                 </span>
               </div>

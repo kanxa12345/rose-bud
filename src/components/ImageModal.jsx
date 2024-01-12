@@ -50,16 +50,13 @@ const ImageModal = (props) => {
     <>
       <div
         onClick={openModal}
-        data-aos="zoom-in"
-        data-aos-duration="1000"
-        data-aos-once="true"
       >
         <Image
           src={imageUrl}
           priority={true}
           width={2000}
           height={2000}
-          className="w-full h-[240px] object-cover"
+          className="w-full sm:h-[240px] h-[150px] object-cover"
           alt="Image"
         />
       </div>
@@ -83,7 +80,7 @@ const ImageModal = (props) => {
             width={2000}
             height={2000}
             alt="Full Image"
-            className="h-full lg:w-[50%] w-full object-cover"
+            className="h-full lg:w-[50%] w-full sm:object-cover object-contain"
           />
         </div>
         <span
