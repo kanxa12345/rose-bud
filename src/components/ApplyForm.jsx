@@ -58,7 +58,7 @@ const ApplyForm = ({ closeModal, jobTitle, country, jobType }) => {
 
       <form
         onSubmit={handleSubmit}
-        className="flex w-full flex-col justify-between items-center gap-4"
+        className="flex w-full flex-col justify-between items-center sm:gap-4 gap-2 sm:text-base text-sm"
       >
         <div className="flex sm:flex-row flex-col gap-2 w-full">
           <div className="flex flex-col items-start p-1 gap-1 w-full">

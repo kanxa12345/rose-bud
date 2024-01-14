@@ -49,10 +49,10 @@ const Index = () => {
           </ul>
         </div>
       </section>
-      <section className="py-20 bg-gray-50">
+      <section className="md:py-20 py-16 bg-gray-50">
         <div className="container flex flex-col items-center gap-8">
-          <h2 className="text-2xl font-medium">{jobTitle}</h2>
-          <div className="w-full grid grid-cols-3 gap-8">
+          <h2 className="sm:text-2xl text-xl font-medium">{jobTitle}</h2>
+          <div className="w-full grid lg:grid-cols-3 sm:grid-cols-2 gap-8">
             {data.map((jobItem, jobId) => (
               <div key={jobId}>
                 <div className="shadow-[0_0_5px_1px_rgba(0,0,0,0.1)] bg-white p-4 rounded">
@@ -70,11 +70,11 @@ const Index = () => {
                     <div className="flex flex-col items-start gap-1">
                       <h3 className="flex items-center gap-1">
                         <FaMapMarkerAlt />
-                        <span className="text-xl font-semibold">
+                        <span className="sm:text-xl text-lg font-semibold">
                           {jobItem.country}
                         </span>
                       </h3>
-                      <div className="font-medium sm:text-lg text-sm">
+                      <div className="font-medium sm:text-lg text-base">
                         <p>
                           Company Name:
                           <b className=" text-brand1 ms-[2px]">
@@ -85,7 +85,7 @@ const Index = () => {
                     </div>
                   </div>
                   <div className="mt-2">
-                    <p className="text-gray-700">
+                    <p className="text-gray-700 sm:text-base text-sm">
                       {jobItem.description.substring(0, 100)}...
                     </p>
                     <div className="flex items-center gap-4 mt-3">
@@ -93,13 +93,13 @@ const Index = () => {
                         onClick={() =>
                           openModal(jobItem.country, jobItem.jobType)
                         }
-                        className="text-sm text-white border border-blue-950 bg-blue-950 hover:text-blue-950 hover:bg-white px-2 py-1 cursor-pointer transition-all duration-200 ease-linear"
+                        className="sm:text-sm text-xs text-white border border-blue-950 bg-blue-950 hover:text-blue-950 hover:bg-white px-2 py-1 cursor-pointer transition-all duration-200 ease-linear"
                       >
                         Apply Now
                       </button>
                       <Link
                         href={`/jobSector/${jobTitle}/${jobItem.country}`}
-                        className="text-sm flex text-white py-1 px-2 bg-brand1 border border-brand1 transition-all duration-200 ease-linear hover:bg-white hover:text-brand1"
+                        className="sm:text-sm text-xs flex text-white py-1 px-2 bg-brand1 border border-brand1 transition-all duration-200 ease-linear hover:bg-white hover:text-brand1"
                       >
                         View Details
                       </Link>

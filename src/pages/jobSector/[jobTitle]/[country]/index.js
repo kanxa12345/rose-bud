@@ -30,7 +30,7 @@ const Index = () => {
     <>
       <section className="h-[200px] bg-gray-900 text-white">
         <div className="container flex justify-center items-center h-full pt-[78px]">
-          <ul className="flex items-center gap-1">
+          <ul className="flex items-center sm:text-base text-sm gap-1">
             <li>
               <Link href="/" className="text-brand1">
                 Home
@@ -52,30 +52,30 @@ const Index = () => {
           </ul>
         </div>
       </section>
-      <section className="py-20">
+      <section className="md:py-20 py-16 bg-gray-50">
         {data && (
-          <div className="container flex gap-8">
+          <div className="container flex lg:flex-row flex-col gap-6">
             <div
-              className="w-2/3 flex flex-col items-start gap-2"
+              className="lg:w-2/3 w-full flex flex-col items-start gap-2 lg:order-none order-1"
               data-aos="fade-right"
               data-aos-once="true"
               data-aos-duration="2000"
             >
-              <small className="text-base font-medium text-gray-500">
+              <small className="sm:text-base text-sm font-medium text-gray-500">
                 {country}
               </small>
-              <h2 className="text-2xl font-semibold">{jobTitle}</h2>
+              <h2 className="sm:text-2xl text-xl font-semibold">{jobTitle}</h2>
               <div className="flex flex-col items-start gap-2">
-                <p className="text-gray-700">{data.description}</p>
-                <p className="text-brand1 text-lg font-medium">
+                <p className="text-gray-700 sm:text-base text-sm">{data.description}</p>
+                <p className="text-brand1 sm:text-lg text-base font-medium">
                   <span className="text-black me-[2px]">Company Name:</span>
                   {data.companyName}
                 </p>
-                <p className="text-brand1 text-lg font-medium">
+                <p className="text-brand1 sm:text-lg text-base font-medium">
                   <span className="text-black me-[2px]">Job Type:</span>
                   {data.jobType}
                 </p>
-                <p className="text-brand1 text-lg font-medium">
+                <p className="text-brand1 sm:text-lg text-base font-medium">
                   <span className="text-black me-[2px]">
                     Min. Qualification:
                   </span>
@@ -88,13 +88,13 @@ const Index = () => {
               </div>
               <button
                 onClick={openModal}
-                className="font-medium text-white border border-blue-950 bg-blue-950 hover:text-blue-950 hover:bg-white px-2 py-1 cursor-pointer transition-all duration-200 ease-linear"
+                className="font-medium sm:text-base text-sm text-white border border-blue-950 bg-blue-950 hover:text-blue-950 hover:bg-white px-2 py-1 cursor-pointer transition-all duration-200 ease-linear"
               >
                 Apply Now
               </button>
             </div>
             <div
-              className="w-1/3"
+              className="lg:w-1/3 w-full"
               data-aos="zoom-in"
               data-aos-once="true"
               data-aos-duration="2000"
@@ -105,7 +105,7 @@ const Index = () => {
                 width={2000}
                 height={2000}
                 alt={jobTitle}
-                className="w-full h-80 object-cover rounded-se-[30px] rounded-es-[30px]"
+                className="w-full sm:h-80 h-60 object-cover lg:rounded-se-[30px] lg:rounded-es-[30px]"
               />
             </div>
           </div>

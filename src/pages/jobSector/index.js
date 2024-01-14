@@ -31,12 +31,12 @@ const Index = () => {
           </ul>
         </div>
       </section>
-      <section className="py-20">
+      <section className="md:py-20 py-16 bg-gray-50">
         <div className="container flex flex-col items-center gap-6">
-          <h2 className="text-2xl font-medium">
+          <h2 className="sm:text-2xl text-xl font-medium">
             <span className="text-brand1">Job</span> Sectors
           </h2>
-          <div className="w-full grid grid-cols-4 gap-8">
+          <div className="w-full grid lg:grid-cols-4 md:grid-cols-3 grid-cols-2 gap-6">
             {Object.values(jobFolder).map((jobItem, id) => (
               <div key={id} className="flex flex-col items-center group">
                 <Link href={`/jobSector/${jobItem.jobTitle}`} className="w-full h-auto overflow-hidden">
@@ -46,11 +46,11 @@ const Index = () => {
                     width={2000}
                     height={2000}
                     alt={jobItem.jobTitle}
-                    className="w-full h-60 object-cover group-hover:scale-110 transition-all duration-150 ease-linear"
+                    className="w-full sm:h-60 h-36 object-cover group-hover:scale-110 transition-all duration-150 ease-linear"
                   />
                 </Link>
                 <span className="w-full flex justify-center bg-blue-950 text-white py-2">
-                  <h3 className="text-xl font-medium">{jobItem.jobTitle}</h3>
+                  <h3 className="sm:text-xl text-lg font-medium">{jobItem.jobTitle}</h3>
                 </span>
               </div>
             ))}
