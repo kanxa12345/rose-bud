@@ -29,5 +29,25 @@ const data = [
         placeName: 'Pokhara',
         imageUrl: '/images/heritage-image/pokhara.webp',
     },
+    {
+        id: 7,
+        placeName: 'Lumbini',
+        imageUrl: '/images/heritage-image/lumbini.webp',
+    },
+    {
+        id: 8,
+        placeName: 'Muktinath',
+        imageUrl: '/images/heritage-image/muktinath.webp',
+    },
+    {
+        id: 9,
+        placeName: 'Kanchanpur',
+        imageUrl: '/images/heritage-image/kanchanpur.webp',
+    },
+    {
+        id: 10,
+        placeName: 'Janakpur',
+        imageUrl: '/images/heritage-image/janakpur.webp',
+    },
 ];
 export default data;

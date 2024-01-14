@@ -24,8 +24,8 @@ const index = () => {
           </ul>
         </div>
       </section>
-      <section className="py-20 bg-gray-100">
-        <div className="container grid grid-cols-4 gap-6 w-full">
+      <section className="md:py-20 py-16 bg-gray-100">
+        <div className="container grid lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 gap-6 w-full">
           {images.map((image, id) => (
             <ModalImage
               key={id}

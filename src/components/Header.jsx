@@ -96,19 +96,17 @@ const Header = () => {
             className="lg:w-[100px] w-[70px]"
           />
         </Link>
-        <div onClick={handleNav} className="lg:hidden text-xl">
-          <span className={`${nav ? "hidden" : "block"}`}>
-            <GiHamburgerMenu />
-          </span>
-          <span className={`${nav ? "block" : "hidden"}`}>
-            <FaXmark />
-          </span>
-        </div>
+        <span onClick={handleNav} className="lg:hidden inline-block text-xl">
+          <GiHamburgerMenu />
+        </span>
         <nav
-          className={`block lg:opacity-100 lg:relative absolute top-0 lg:left-0 lg:h-auto h-screen lg:w-auto w-72 lg:bg-transparent bg-blue-950 lg:p-0 p-8  text-white lg:transition-none transition-all duration-300 ease-linear ${
-            nav ? "left-0 opacity-100" : "-left-72 opacity-0"
+          className={`lg:block flex flex-col gap-10 items-end lg:opacity-100 lg:relative absolute top-0 lg:right-0 lg:h-auto h-screen lg:w-auto w-72 lg:bg-transparent bg-blue-950 lg:p-0 p-8  text-white lg:transition-none transition-all duration-300 ease-linear ${
+            nav ? "right-0 opacity-100" : "-right-72 opacity-0"
           } ${scrolled ? "lg:text-black" : "lg:text-white"}`}
         >
+          <span onClick={handleNav} className="lg:hidden inline-block text-xl ms-auto w-auto">
+            <FaXmark />
+          </span>
           <ul className="flex lg:flex-row flex-col lg:items-center items-start gap-8 font-medium w-full">
             <li
               onClick={() => {

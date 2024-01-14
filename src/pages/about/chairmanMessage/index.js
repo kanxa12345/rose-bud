@@ -17,40 +17,40 @@ const Index = () => {
           </ul>
         </div>
       </section>
-      <section className="py-20 bg-gray-50">
-        <div className="container flex flex-col items-center gap-14">
+      <section className="md:py-20 py-16 bg-gray-50">
+        <div className="container flex flex-col items-center sm:gap-14 gap-10">
           <div className="w-full flex flex-col items-center gap-1">
-            <h2 className="text-2xl font-medium text-black text-center">
+            <h2 className="sm:text-2xl text-xl font-medium text-black text-center">
               Message From Chairman
             </h2>
             <div className="flex items-center gap-4 w-full justify-center">
-              <span className="h-1 w-1/5 bg-gradient-to-r from-gray-300 to-red-400"></span>
+              <span className="h-1 sm:w-1/5 w-1/4 bg-gradient-to-r from-gray-300 to-red-400"></span>
               <span className="inline-block w-2 h-2 bg-brand1 rotate-45"></span>
-              <span className="h-1 w-1/5 bg-gradient-to-r from-red-400 to-gray-300"></span>
+              <span className="h-1 sm:w-1/5 w-1/4 bg-gradient-to-r from-red-400 to-gray-300"></span>
             </div>
           </div>
           <div
-            className="flex gap-8"
+            className="flex lg:flex-row flex-col gap-8"
             data-aos="fade-up"
             data-aos-once="true"
             data-aos-duration="2000"
           >
-            <div className="flex flex-col gap-3 items-start  w-1/3">
+            <div className="flex flex-col sm:gap-3 gap-2 items-start lg:w-1/3 w-full">
               <Image
                 src="/images/chairman.jpg"
                 priority={true}
                 width={2000}
                 height={2000}
                 alt="chairman"
-                className="w-full h-96 object-cover"
+                className="w-full sm:h-96 h-72 object-cover"
               />
               <span>
-                <h3 className="text-2xl font-semibold">Jay Prakash Das</h3>
-                <p className="text-lg font-medium text-brand1">Chairman</p>
+                <h3 className="sm:text-2xl text-xl font-semibold">Jay Prakash Das</h3>
+                <p className="sm:text-lg text-base font-medium text-brand1">Chairman</p>
               </span>
             </div>
-            <div className="flex flex-col items-start gap-4 w-2/3">
-              <small className="text-lg font-medium text-gray-500">
+            <div className="flex flex-col items-start gap-4 sm:text-base text-sm lg:w-2/3 w-full">
+              <small className="sm:text-lg text-base font-medium text-gray-500">
                 Namaste everyone,
               </small>
               <p>
@@ -83,7 +83,7 @@ const Index = () => {
                 linked to this business, and not just one person, we therefore
                 understand that it is not just a business but a human service.
               </p>
-              <small className="text-lg font-medium text-gray-500">
+              <small className="sm:text-lg text-base font-medium text-gray-500">
                 Thank you.
               </small>
             </div>

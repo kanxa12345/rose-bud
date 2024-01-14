@@ -18,12 +18,12 @@ const Index = () => {
           </ul>
         </div>
       </section>
-      <section className="py-20 bg-gray-100">
+      <section className="md:py-20 py-16 bg-gray-100">
         <div className="container flex flex-col items-center gap-6">
-          <h2 className="text-2xl font-medium">
+          <h2 className="sm:text-2xl text-xl font-medium">
             <span className="text-brand1">Newspaper</span> Vacancy
           </h2>
-          <div className="w-full grid grid-cols-4 gap-6">
+          <div className="w-full grid lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 sm:gap-6 gap-4">
             {VacancyData.map((item, index) => (
               <NewspaperModal key={index} imageUrl={item.imageUrl} publishedDate={item.publishedDate} interviewDate={item.interviewDate} images={VacancyData} index={index} />
             ))}

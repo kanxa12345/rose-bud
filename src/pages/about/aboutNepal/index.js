@@ -18,27 +18,27 @@ const Index = () => {
           </ul>
         </div>
       </section>
-      <section className="py-20">
+      <section className="md:py-20 py-16">
         <div className="container flex flex-col items-center gap-14">
           <div className="w-full flex flex-col items-center gap-1">
-            <h2 className="text-2xl font-medium text-black text-center">
+            <h2 className="sm:text-2xl text-xl font-medium text-black text-center">
               About Nepal
             </h2>
             <div className="flex items-center gap-4 w-full justify-center">
-              <span className="h-1 w-1/5 bg-gradient-to-r from-gray-300 to-red-400"></span>
+              <span className="h-1 sm:w-1/5 w-1/4 bg-gradient-to-r from-gray-300 to-red-400"></span>
               <span className="inline-block w-2 h-2 bg-brand1 rotate-45"></span>
-              <span className="h-1 w-1/5 bg-gradient-to-r from-red-400 to-gray-300"></span>
+              <span className="h-1 sm:w-1/5 w-1/4 bg-gradient-to-r from-red-400 to-gray-300"></span>
             </div>
           </div>
-          <div className="w-full flex gap-6">
+          <div className="w-full flex lg:flex-row flex-col lg:gap-6 gap-10">
             <div
-              className="w-2/3 flex flex-col items-start gap-2"
+              className="lg:w-2/3 w-full flex flex-col items-start gap-2 lg:order-none order-1"
               data-aos="fade-right"
               data-aos-once="true"
               data-aos-duration="2000"
             >
-              <h2 className="text-2xl font-medium">Nepal</h2>
-              <div className="flex flex-col gap-3 text-gray-600">
+              <h2 className="sm:text-2xl text-xl font-medium">Nepal</h2>
+              <div className="flex flex-col gap-3 text-gray-600 sm:text-base text-sm">
                 <p>
                   Nestled in South Asia between the Himalayas and the Gangetic
                   plains, is a captivating land of diverse geography and rich
@@ -75,7 +75,7 @@ const Index = () => {
               </div>
             </div>
             <div
-              className="flex justify-center w-1/3"
+              className="flex justify-center lg:w-1/3 w-full"
               data-aos="zoom-in"
               data-aos-once="true"
               data-aos-duration="2000"
@@ -86,23 +86,23 @@ const Index = () => {
                 width={2000}
                 height={2000}
                 alt="nisan chhap"
-                className="w-full h-72 object-contain"
+                className="w-full sm:h-72 h-60 object-contain"
               />
             </div>
           </div>
         </div>
       </section>
-      <section className="py-20 bg-gray-100">
+      <section className="md:py-20 py-16 bg-gray-100">
         <div className="container flex flex-col items-center gap-6">
-          <h2 className="text-2xl font-medium">
+          <h2 className="sm:text-2xl text-xl font-medium">
             Nepal <span className="text-brand1">Heritage</span> Site
           </h2>
-          <div className="w-full grid grid-cols-4 gap-10">
+          <div className="w-full grid xl:grid-cols-4 lg:grid-cols-3 sm:grid-cols-2 gap-6">
             {HeritageData.map((dataItem, id) => (
               <div
                 key={id}
                 className={`flex flex-col items-center gap-1 ${
-                  id === 0 || id === HeritageData.length - 1 ? "col-span-2" : ""
+                  id === 0 || id === HeritageData.length - 1 ? "sm:col-span-2" : ""
                 }`}
               >
                 <Image
@@ -111,9 +111,9 @@ const Index = () => {
                   width={2000}
                   height={2000}
                   alt={dataItem.placeName}
-                  className="w-full h-[330px] object-cover object-center"
+                  className="w-full sm:h-[300px] h-[200px] object-cover object-center"
                 />
-                <h3 className="text-xl font-medium">{dataItem.placeName}</h3>
+                <h3 className="sm:text-xl text-lg font-medium">{dataItem.placeName}</h3>
               </div>
             ))}
           </div>
