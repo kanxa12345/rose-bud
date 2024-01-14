@@ -3,7 +3,7 @@ import Link from "next/link";
 import { useRouter } from "next/router";
 import React, { useEffect, useState } from "react";
 import { GiHamburgerMenu } from "react-icons/gi";
-import { FaXmark } from "react-icons/fa6";
+import { FaXmark, FaAngleDown } from "react-icons/fa6";
 
 const Header = () => {
   const [scrolled, setScrolled] = useState(false);
@@ -32,7 +32,7 @@ const Header = () => {
     const determineActiveBlock = () => {
       const path = router.asPath; // Using asPath to get the full URL path
 
-      if (path === "/" || path === "/whyUs") {
+      if (path === "/" || path === "/whyUs" || path === "/country") {
         return 0;
       } else if (path.startsWith("/about")) {
         return 1;
@@ -104,7 +104,10 @@ const Header = () => {
             nav ? "right-0 opacity-100" : "-right-72 opacity-0"
           } ${scrolled ? "lg:text-black" : "lg:text-white"}`}
         >
-          <span onClick={handleNav} className="lg:hidden inline-block text-xl ms-auto w-auto">
+          <span
+            onClick={handleNav}
+            className="lg:hidden inline-block text-xl ms-auto w-auto"
+          >
             <FaXmark />
           </span>
           <ul className="flex lg:flex-row flex-col lg:items-center items-start gap-8 font-medium w-full">
@@ -138,11 +141,12 @@ const Header = () => {
                   }
                 }}
                 onClick={handleAbout}
-                className={`flex justify-start w-full ${
+                className={`flex items-center justify-between w-full ${
                   activeBlock === 1 ? "lg:text-brand1" : ""
                 }`}
               >
                 About Company
+                <FaAngleDown className={`lg:hidden transition-all duration-200 ease-linear ${aboutMenu ? 'rotate-180': ''}`} />
               </button>
               <div
                 className={`lg:flex flex-col gap-1 lg:absolute lg:w-60 w-full left-0 lg:bg-brand2 bg-white lg:text-white text-black lg:bg-opacity-90 bg-opacity-100 transition-all duration-100 ease-linear lg:mt-0 mt-2 ${
@@ -225,11 +229,12 @@ const Header = () => {
                   }
                 }}
                 onClick={handleService}
-                className={`flex justify-start w-full ${
+                className={`flex items-center justify-between w-full ${
                   activeBlock === 2 ? "lg:text-brand1" : ""
                 }`}
               >
                 Services
+                <FaAngleDown className={`lg:hidden transition-all duration-200 ease-linear ${serviceMenu ? 'rotate-180': ''}`} />
               </button>
               <div
                 className={`lg:flex flex-col gap-1 lg:absolute lg:w-60 w-full left-0 lg:bg-brand2 bg-white lg:text-white text-black lg:bg-opacity-90 bg-opacity-100 transition-all duration-100 ease-linear lg:mt-0 mt-2 ${
@@ -302,9 +307,10 @@ const Header = () => {
                 onClick={handleGallery}
                 className={`${
                   activeBlock === 5 ? "lg:text-brand1" : ""
-                } flex justify-start w-full`}
+                } flex items-center justify-between w-full`}
               >
                 Gallery
+                <FaAngleDown className={`lg:hidden transition-all duration-200 ease-linear ${galleryMenu ? 'rotate-180': ''}`} />
               </button>
               <div
                 className={`lg:flex flex-col gap-1 lg:absolute lg:w-40 w-full left-0 lg:bg-brand2 bg-white lg:text-white text-black lg:bg-opacity-90 bg-opacity-100 transition-all duration-100 ease-linear lg:mt-0 mt-2 ${
