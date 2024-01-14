@@ -1,4 +1,4 @@
-export default [
+const data = [
   {
     id: 1,
     country: "Nepal",
@@ -60,3 +60,5 @@ export default [
     imageUrl: "/images/clients-images/tejasvi.png",
   },
 ];
+
+export default data;
